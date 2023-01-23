@@ -1,13 +1,12 @@
-import React, {useEffect, createContext, useState } from 'react';
+import React, {createContext, useState, useEffect} from 'react';
 import {useNavigate} from "react-router-dom";
 import jwt_decode from "jwt-decode";
 import axios from "axios";
 
-// create context
-// custom component
+// context
 export const AuthContext = createContext({});
 
-// custom provider component, with children as a property
+//custom provider component (add the children as property)
 function AuthContextProvider({children}) {
 
     // state
@@ -15,26 +14,23 @@ function AuthContextProvider({children}) {
         isAuth: false,
         user: null,
         status: "pending"
-    })
+    });
 
-    // navigate
     const navigate = useNavigate();
 
-    useEffect(() =>{
+    useEffect(() => {
         // get token from local storage
         const storedToken = localStorage.getItem('token')
 
-        //if token = true get userdata
-        if(storedToken){
+        // if token = true get userdata
+        if (storedToken) {
             const decodedToken = jwt_decode(storedToken)
 
-            if(Math.floor(Date.now()/ 1000) <decodedToken.exp){
-                //check if it works
+            if (Math.floor(Date.now() / 1000) < decodedToken.exp) {
                 console.log("gebruiker nog ingelogd")
                 void fetchUserData(storedToken, decodedToken.sub)
             } else {
-                // check if it works
-                console.log("token is verlopen")
+                console.log("token verlopen")
                 localStorage.removeItem('token')
             }
         } else {
@@ -49,8 +45,7 @@ function AuthContextProvider({children}) {
     }, [])
 
     // login function
-    function login(jwt){
-        // check if it works
+    function login(jwt) {
         console.log("gebruiker ingelogd")
         localStorage.setItem('token', jwt)
         const decodedToken = jwt_decode(jwt);
@@ -58,11 +53,11 @@ function AuthContextProvider({children}) {
         void fetchUserData(jwt, decodedToken.sub, "/profile")
     }
 
-    // fetching the userdata
     async function fetchUserData(jwt, id, redirect) {
         try {
-            const response = await axios.get(`https://frontend-educational-backend.herokuapp.com/api/user/${id}`,{
-                headers:{
+            // get userdata
+            const response = await axios.get(`https://frontend-educational-backend.herokuapp.com/api/user/${id}`, {
+                headers: {
                     "Content-Type": "application/json",
                     Authorization: `Bearer ${jwt}`,
                 }
@@ -78,11 +73,11 @@ function AuthContextProvider({children}) {
                 },
                 status: "done"
             })
-            if (redirect){
+            if (redirect) {
                 navigate(redirect)
             }
-            console.log(response);
-        } catch(e) {
+            console.log(response)
+        } catch (e) {
             console.error(e)
             setAuth({
                 ...auth,
@@ -92,7 +87,7 @@ function AuthContextProvider({children}) {
     }
 
     // logout function
-    function logout (){
+    function logout() {
         console.log("gebruiker uitgelogd")
         localStorage.removeItem('token')
         setAuth({
@@ -104,6 +99,8 @@ function AuthContextProvider({children}) {
         navigate("/login")
     }
 
+    // data-object (add to the AuthContext.Provider component as value).
+    // auth is an object with 3 object-keys (isAuth, user, status).
     const contextData = {
         isAuth: auth.isAuth,
         user: auth.user,
@@ -111,7 +108,6 @@ function AuthContextProvider({children}) {
         login: login,
         logout: logout
     }
-
 
     return (
         <AuthContext.Provider value={contextData}>
