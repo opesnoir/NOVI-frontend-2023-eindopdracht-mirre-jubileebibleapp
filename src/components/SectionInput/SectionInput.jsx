@@ -1,7 +1,7 @@
 import React from 'react';
 
 //component for the about pages
-const AboutInput = ({title, paragraphOne, paragraphTwo, children, signature}) => {
+const SectionInput = ({title, paragraphOne, paragraphTwo, children, signature}) => {
     return (
         <>
             <h2>{title}</h2>
@@ -13,4 +13,4 @@ const AboutInput = ({title, paragraphOne, paragraphTwo, children, signature}) =>
     );
 };
 
-export default AboutInput;
+export default SectionInput;

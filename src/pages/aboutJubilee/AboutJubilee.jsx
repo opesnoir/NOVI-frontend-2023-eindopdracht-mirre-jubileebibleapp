@@ -1,12 +1,12 @@
 import React from 'react';
-import AboutInput from "../../components/AboutInput/AboutInput";
+import SectionInput from "../../components/SectionInput/SectionInput";
 import Image from "../../components/Image/Image";
 import ram from "../../assets/aboutjubilee-ram-pexels-david-selbert-7465130.jpg";
 
 const AboutJubilee = () => {
     return (
         <>
-            <AboutInput
+            <SectionInput
                 title="Over Jubilee BibleApp"
                 paragraphOne="“Houd aan in het lezen, in het vermanen, in het leren, totdat ik kome.”
                 (1 Timotheüs 4:13). Dat schreef Timotheus over het lezen van het woord van de HEERE. "
@@ -14,7 +14,7 @@ const AboutJubilee = () => {
                 signature="Jubilee"
             />
             <Image
-                src={ram}
+                image={ram}
                 alt="Ram"
             />
         </>

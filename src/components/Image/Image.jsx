@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './Image.scss'
 
-const Image = ({src, alt}) => {
+const Image = ({image, alt}) => {
     return (
         <>
             <img
-                src={src}
+                src={image}
                 alt={alt}
                 className={styles.image}
             />

@@ -1,12 +1,12 @@
 import React from 'react';
-import AboutInput from "../../components/AboutInput/AboutInput";
+import SectionInput from "../../components/SectionInput/SectionInput";
 import Image from "../../components/Image/Image";
 import schaap from "../../assets/about-sheep-pexels-arthur-swiffen-12550240 copy.jpg"
 
 const About = () => {
     return (
         <>
-            <AboutInput
+            <SectionInput
                 title="Over mij"
                 paragraphOne="“Uw woord is een lamp voor mijn voet, en een licht op mijn pad.”
                                 (Psalm 119:105). Dat
@@ -20,7 +20,7 @@ const About = () => {
                 signature="Mirre"
             />
             <Image
-                src={schaap}
+                image={schaap}
                 alt="Schaap"
             />
         </>
