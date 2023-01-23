@@ -16,7 +16,7 @@ const Nav = () => {
 
     return (
         <>
-            <Nav>
+            <nav>
                 <div>
                     <ul>
                         <li><NavLink to="/">Home</NavLink></li>
@@ -35,7 +35,7 @@ const Nav = () => {
                             }
                     </ul>
                 </div>
-            </Nav>
+            </nav>
         </>
     );
 };
