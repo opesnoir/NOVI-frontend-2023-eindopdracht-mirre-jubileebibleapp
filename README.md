@@ -19,4 +19,5 @@ Het project is opgezet met Create React App.
    [screenshot invoegen]
 
 3. Beschrijving hoe andere developers de applicatie kunnen runnen.
-   import {BrowserRouter as Router} from "react-router-dom";
+   npm install --save browser-router
+   npm install react-icons --save
