@@ -2,6 +2,7 @@ import React, {useContext} from 'react';
 import {NavLink} from "react-router-dom";
 import logo from "../../assets/logo-jubilee-bibleapp-high-resolution-logo-white-on-transparent-background.png"
 import {AiOutlineUser, AiOutlineUserAdd} from "react-icons/ai";
+import {AuthContext} from "../../context/AuthContext";
 
 const Nav = () => {
 
