@@ -4,7 +4,7 @@ import React from 'react';
 const SectionInput = ({title, paragraphOne, paragraphTwo, children, signature}) => {
     return (
         <>
-            <h2>{title}</h2>
+            <h1>{title}</h1>
             <p>{paragraphOne}</p>
             <p>{paragraphTwo}</p>
             {children}
