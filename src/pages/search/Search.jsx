@@ -3,6 +3,7 @@ import axios from "axios";
 import styles from "./Search.module.css";
 import Image from "../../components/Image/Image";
 import lamb from "../../assets/search-lamb-pexels-paul-seling-891607.jpg";
+import Pagination from "../../components/Pagination/Pagination";
 /*import Pagination from "../../components/Pagination/Pagination";*/
 
 
@@ -140,12 +141,12 @@ const Search = () => {
                                 )}
                             </ul>
                         )}
-               {/*         <Pagination
+                        <Pagination
                             totalPost={searchResults.length}
                             postPerPage={postPerPage}
                             currentPage={currentPage}
                             setCurrentPage={setCurrentPage}
-                        />*/}
+                        />
                     </div>
                 </div>
             </div>
