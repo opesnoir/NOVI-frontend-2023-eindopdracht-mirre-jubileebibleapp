@@ -3,13 +3,14 @@ import {useForm} from "react-hook-form";
 import FormInput from "../../components/FormInput/FormInput";
 import Wrapper from "../../components/Wrapper/Wrapper";
 import Button from "../../components/Button/Button";
-import lam from "../../assets/login-lamb-pexels-atahan-demir-11553491.jpg";
+import schapen from "../../assets/register-schapen-pexels-trinity-kubassek-288621 (1).jpg"
 import Image from "../../components/Image/Image";
 
 const Login = () => {
 
     const {register, handleSubmit, formState: {errors}} = useForm();
-    // const { register, formState: { errors } } = useForm();
+
+    // wachtwoord tonen
     const [showPassword, setShowPassword] = useState(false);
 
     function handleFormSubmit(data) {
@@ -72,8 +73,8 @@ const Login = () => {
                 />
             </form>
             <Image
-                image={lam}
-                alt="Afbeelding van een lam"
+                image={schapen}
+                alt="Afbeelding van schapen"
             />
         </>
     );
