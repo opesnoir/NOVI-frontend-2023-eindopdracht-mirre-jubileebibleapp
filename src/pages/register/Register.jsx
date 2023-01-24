@@ -12,22 +12,29 @@ const Register = () => {
     const {register, handleSubmit, formState: {errors}} = useForm();
 
     // form
-    const [username,] = useState(" ");
-    const [password] = useState(" ");
     const [showPassword, setShowPassword] = useState( false );
-    const [showConfirmPassword, setShowConfirmPassword] = useState(false)
+    const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
 
-    async function handleFormSubmit(e) {
-        e.preventDefault();
+    //function for handeling the submit
+    function handleFormSubmit(data) {
+        console.log(data)
+    }
+
+    // function to register user
+    async function registerUser(e) {
+        e.preventDefault()
+        console.log( "Gebruiker geregistreerd" )
         try {
-            const response = await axios.post( "https://frontend-educational-backend.herokuapp.com/api/auth/signin", {
-                "username": username,
-                "password": password
-            });
-                console.log(response);
-        } catch(error) {
-            console.error(e);
+            const response = await axios.post('https://frontend-educational-backend.herokuapp.com/api/test/all',{
+            },{
+                "Content-Type": "application/json",
+                "Authorization": "Bearer xxx.xxx.xxx",
+            })
+            console.log(response);
+            /*login( response.data.accessToken )*/
+        } catch ( e ) {
+            console.error( e )
         }
     }
 
@@ -52,7 +59,7 @@ const Register = () => {
                     errors={errors}
                 />
                 <FormInput
-                    inputType="text"
+                    inputType="email"
                     inputName="email"
                     inputId="email-field"
                     inputLabel="Emailadres:"
@@ -123,7 +130,7 @@ const Register = () => {
                 </label>
                 <Button
                     type="submit"
-                    name="Inloggen"
+                    name="Registreren"
                 />
             </form>
             <Image

@@ -28,6 +28,8 @@ function App() {
             <Route path="/signin" element={<Login/>}></Route>
             <Route path="/favorite" element={<Favorite/>}></Route>
             <Route path="/profile" element={auth === true ? <Profile/> : <Navigate to="/signup"/>}></Route>
+            {/*profile van styling voorzien:*/}
+            {/*<Route path="/profile" element={<Profile/>}></Route>*/}
             <Route path="/favorite-auth" element={auth === true ? <Favorite/> : <Navigate to="/search"/>}></Route>
             <Route path="*" element={<NotFound/>}></Route>
         </Routes>

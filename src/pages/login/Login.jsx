@@ -1,21 +1,25 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import {useForm} from "react-hook-form";
 import FormInput from "../../components/FormInput/FormInput";
 import Wrapper from "../../components/Wrapper/Wrapper";
 import Button from "../../components/Button/Button";
 import schapen from "../../assets/register-schapen-pexels-trinity-kubassek-288621 (1).jpg"
 import Image from "../../components/Image/Image";
+import axios from "axios";
+import jwt_decode from "jwt-decode";
+import {AuthContext} from "../../context/AuthContext";
 
 const Login = () => {
 
     const {register, handleSubmit, formState: {errors}} = useForm();
-
     // wachtwoord tonen
     const [showPassword, setShowPassword] = useState(false);
+    const {login} = useContext(AuthContext);
 
     function handleFormSubmit(data) {
         console.log(data)
     }
+
 
     return (
         <>
