@@ -15,6 +15,9 @@ const Register = () => {
     const [showPassword, setShowPassword] = useState( false );
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
+    // token
+    const token = localStorage.getItem('token');
+
 
     //function for handeling the submit
     function handleFormSubmit(data) {
@@ -22,7 +25,7 @@ const Register = () => {
     }
 
     // function to register user
-    async function registerUser({username, email, password}) {
+    async function registerUser(e, {username, email, password}) {
         e.preventDefault()
         console.log( "Gebruiker geregistreerd" )
         try {

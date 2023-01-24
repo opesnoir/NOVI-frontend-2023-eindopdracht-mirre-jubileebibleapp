@@ -11,6 +11,7 @@ import Register from "./pages/register/Register";
 import Profile from "./pages/profile/Profile";
 import Favorite from "./pages/favorite/Favorite";
 import NotFound from "./pages/notFound/NotFound";
+import Search from "./pages/search/Search";
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
             <Route path="/about" element={<About/>}></Route>
             <Route path="/about-Bible" element={<AboutBible/>}></Route>
             <Route path="/about-Jubilee" element={<AboutJubilee/>}></Route>
+            <Route path="/search" element={<Search/>}></Route>
             <Route path="/signup" element={<Register/>}></Route>
             <Route path="/signin" element={<Login/>}></Route>
             <Route path="/favorite" element={<Favorite/>}></Route>
