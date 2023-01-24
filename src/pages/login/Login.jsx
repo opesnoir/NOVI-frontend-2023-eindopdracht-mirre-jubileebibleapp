@@ -1,73 +1,75 @@
-import React, {useContext, useState} from 'react';
-import {AuthContext} from "../../context/AuthContext";
-import axios from "axios";
+import React, {useState} from 'react';
+import {useForm} from "react-hook-form";
+import FormInput from "../../components/FormInput/FormInput";
+import Wrapper from "../../components/Wrapper/Wrapper";
 import Button from "../../components/Button/Button";
-import Image from "../../components/Image/Image";
 import lam from "../../assets/login-lamb-pexels-atahan-demir-11553491.jpg";
-
-
+import Image from "../../components/Image/Image";
 
 const Login = () => {
-    const {login} = useContext(AuthContext);
 
-    // form
-    const [username, setUsername] = useState(" ");
-    const [password, setPassword] = useState(" ");
-    const [showPassword, setShowPassword] = useState( false );
+    const {register, handleSubmit, formState: {errors}} = useForm();
+    // const { register, formState: { errors } } = useForm();
+    const [showPassword, setShowPassword] = useState(false);
 
-    async function handleLogin( e ) {
-        e.preventDefault();
-        try {
-            const response = await axios.post( "https://frontend-educational-backend.herokuapp.com/api/auth/signin", {
-                "username": username,
-                "password": password
-            } );
-            console.log(response);
-            login( response.data.accessToken );
-        } catch ( e ) {
-            console.error( e );
-        }
+    function handleFormSubmit(data) {
+        console.log(data)
     }
 
     return (
         <>
-            <form onSubmit={handleLogin}>
-                <label>
-                    Gebruikersnaam:
-                    <input
-                        type="username"
-                        value={username}
-                        onChange={ event => setUsername(event.target.value)}
-                    />
-                </label>
-                <label>
-                    Wachtwoord:
-                    <input
-                        id="password"
-                        name="password"
-                        type={showPassword ? "text" : "password"}
-                        role="user"
-                        value={password}
-                        onChange={ e => setPassword( e.target.value ) }
-                        placeholder="Wachtwoord:"
-                        required
-                    />
-
-                </label>
+            <Wrapper>
+                <h1>Login</h1>
+            </Wrapper>
+            <form onSubmit={handleSubmit(handleFormSubmit)}>
+                <FormInput
+                    inputType="text"
+                    inputName="name"
+                    inputId="name-field"
+                    inputLabel="Gebruikersnaam:"
+                    validationRules={{
+                        required: {
+                            value: true,
+                            message: 'Gebruikersnaam is verplicht',
+                        }
+                    }}
+                    register={register}
+                    errors={errors}
+                />
+                <FormInput
+                    inputType={showPassword ? "text" : "password"}
+                    inputName="password"
+                    inputId="password-field"
+                    inputLabel="Wachtwoord:"
+                    validationRules={{
+                        required: {
+                            value: true,
+                            message: 'Wachtwoord is verplicht',
+                        },
+                        pattern: {
+                            value: /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
+                            message: "Het wachtwoord bevat minimaal 8 tekens, waarvan 1 hoofdletter, 1 getal en 1 leesteken"
+                        },
+                        minLength: {
+                            value: 8,
+                            message: "Voer minimaal 8 tekens in"
+                        }
+                    }}
+                    register={register}
+                    errors={errors}
+                />
                 <label>
                     <input
                         type="checkbox"
                         checked={showPassword}
-                        onChange={ () => setShowPassword(!showPassword)}
+                        onChange={() => setShowPassword(!showPassword)}
                     />
-                    Toon wachtwoord
+                    Wachtwoord tonen
                 </label>
-                <div>
-                    <Button
-                        type="submit"
-                        name="Inloggen"
-                    />
-                </div>
+                <Button
+                    type="submit"
+                    name="Inloggen"
+                />
             </form>
             <Image
                 image={lam}
