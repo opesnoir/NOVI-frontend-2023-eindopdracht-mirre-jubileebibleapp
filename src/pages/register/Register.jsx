@@ -22,14 +22,18 @@ const Register = () => {
     }
 
     // function to register user
-    async function registerUser(e) {
+    async function registerUser({username, email, password}) {
         e.preventDefault()
         console.log( "Gebruiker geregistreerd" )
         try {
-            const response = await axios.post('https://frontend-educational-backend.herokuapp.com/api/test/all',{
+            const response = await axios.post('https://frontend-educational-backend.herokuapp.com/api/auth/signup',{
+                "username": username,
+                "email": email,
+                "password": password,
+                "roles": ["user"],
             },{
                 "Content-Type": "application/json",
-                "Authorization": "Bearer xxx.xxx.xxx",
+                "Authorization": `Bearer ${token}`
             })
             console.log(response);
             /*login( response.data.accessToken )*/
@@ -43,7 +47,7 @@ const Register = () => {
             <Wrapper>
                 <h1>Registreer</h1>
             </Wrapper>
-            <form onSubmit={handleSubmit(handleFormSubmit)}>
+            <form onSubmit={handleSubmit(registerUser)}>
                 <FormInput
                     inputType="text"
                     inputName="name"
