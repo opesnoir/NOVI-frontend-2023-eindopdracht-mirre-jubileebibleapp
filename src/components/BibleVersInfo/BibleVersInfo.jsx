@@ -1,8 +1,7 @@
 import React from 'react';
-import Wrapper from "../Wrapper/Wrapper";
 import {Link} from "react-router-dom";
 import Button from "../Button/Button";
-import granaatappel from "../../assets/homepage-pomegranate-pexels-pixabay-65256 copy.jpg"
+import granaatappel from "../../assets/home-pomegranate-pexels-pixabay-65256 copy.jpg"
 import DailyVers from "../DailyVers/DailyVers";
 
 
