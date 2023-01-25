@@ -9,7 +9,7 @@ import {Link} from "react-router-dom";
 import Image from "../../components/Image/Image";
 import Bible from "../../assets/home-bible-pexels-johnmark-smith-272337.jpg";
 import schapen from "../../assets/home-sheeps-pexels-pixabay-460956.jpg";
-import FormInput from "../../components/FormInput/FormInput";
+import SearchBar from "../../components/SearchBar/SearchBar";
 
 
 
@@ -21,6 +21,7 @@ const Home = () => {
                 title="Zoek een Bijbelvers"
                 paragraphOne="Welkom op Jubilee BibleApp. Zoek hieronder een Bijbelvers op titel of steekwoord in ruim 40 vertalingen. Selecteer een Bijbel, voer een zoekterm in en druk op de button om de resultaten te bekijken."
                 />
+                <SearchBar/>
             </Wrapper>
             <BibleVersInfo/>
             <Wrapper>
