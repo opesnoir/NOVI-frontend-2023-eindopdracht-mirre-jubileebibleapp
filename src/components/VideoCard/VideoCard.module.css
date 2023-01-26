@@ -1,6 +1,7 @@
 /*Styling card area*/
 .card{
     max-width: 600px;
+    max-height: 570px;
     margin: 2em;
     padding: 2em;
     background: #e3e3e3;

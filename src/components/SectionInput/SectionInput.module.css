@@ -5,17 +5,17 @@
     align-items: center;
     text-align: center;
     background: rgba(6, 41, 72, 0.8);
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     position: relative;
     overflow: hidden;
-    min-height: 70vh;
+    min-height: 35vh;
 }
 
 /*typography*/
 .h1{
     font-size: 40px;
     color: #f1f1f1;
-    margin: 80px 50px 40px 50px;
+    margin: 40px 50px 40px 50px;
     word-spacing: 2px;
     font-family: "Roboto", sans-serif;
 }
@@ -26,6 +26,8 @@
     color: #f1f1f1;
     font-size: 30px;
     font-weight: normal;
+    padding-right: 60px;
+    padding-left: 60px;
     margin: 20px 80px;
-    line-height: 50px;
+    line-height: 55px;
 }

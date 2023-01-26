@@ -19,51 +19,46 @@ const Home = () => {
         <>
             <div className={styles.outer__container}>
                 <div className={styles.inner__container}>
-                    <Wrapper>
-                        <SectionInput
-                            title="Jubilee BibleApp"
-                            paragraphOne="Welkom bij de Jubilee BibleApp. Deze applicatie biedt u de mogelijkheid om Bijbelversen te zoeken op sleutelwoorden in meer dan 40 vertalingen. Op de zoekpagina kunt u een Bijbel selecteren, een zoekterm invoeren en de resultaten bekijken."
-                        >
-                            <HeroVideo
-                                video={schaapVideo}
-                                type="video/mp4"
+                    <SectionInput
+                        title="Jubilee BibleApp"
+                        paragraphOne="Welkom bij de Jubilee BibleApp. Deze applicatie biedt u de mogelijkheid om Bijbelversen te zoeken op sleutelwoorden in meer dan 40 vertalingen. Op de zoekpagina kunt u een Bijbel selecteren, een zoekterm invoeren en de resultaten bekijken."
+                    >
+                        <HeroVideo
+                            video={schaapVideo}
+                            type="video/mp4"
+                        />
+                        <Link to="/search">
+                            <Button
+                                type="button"
+                                name="Naar zoekpagina"
+                                className={styles.hero__button}
                             />
-                            <Link to="/search">
-                                <Button
-                                    type="button"
-                                    name="Naar zoekpagina"
-                                    className={styles.hero__button}
-                                />
-                            </Link>
-
-                        </SectionInput>
-                    </Wrapper>
+                        </Link>
+                    </SectionInput>
                     <BibleVersInfo/>
-                    <Wrapper>
-                        <div className={styles.card__parent}>
-                            <VideoCard
-                                width="359"
-                                height="206"
-                                src="https://www.youtube.com/embed/XEjDiMjkVRo"
-                                title="What is the Bible"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            />
-                            <VideoCard
-                                width="359"
-                                height="206"
-                                src="https://www.youtube.com/embed/7_CGP-12AE0"
-                                title="Story of the Bible"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            />
-                            <VideoCard
-                                width="359"
-                                height="206"
-                                src="https://www.youtube.com/embed/takEeHtRrMw"
-                                title="The New Humanity"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            />
-                        </div>
-                    </Wrapper>
+                    <div className={styles.card__parent}>
+                        <VideoCard
+                            width="359"
+                            height="206"
+                            src="https://www.youtube.com/embed/XEjDiMjkVRo"
+                            title="What is the Bible"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        />
+                        <VideoCard
+                            width="359"
+                            height="206"
+                            src="https://www.youtube.com/embed/7_CGP-12AE0"
+                            title="Story of the Bible"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        />
+                        <VideoCard
+                            width="359"
+                            height="206"
+                            src="https://www.youtube.com/embed/takEeHtRrMw"
+                            title="The New Humanity"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        />
+                    </div>
                     <Wrapper>
                         <Tile
                             title="Registreren"
