@@ -18,8 +18,9 @@ const Nav = () => {
 
     return (
         <>
-            <nav>
+            <div>
                 <div className={styles.nav__container}>
+                    <nav>
                     <ul>
                         <li><NavLink to="/">Home</NavLink></li>
                         <li><NavLink to="/about">Over</NavLink></li>
@@ -36,8 +37,9 @@ const Nav = () => {
                             </>
                             }
                     </ul>
+                    </nav>
                 </div>
-            </nav>
+            </div>
         </>
     );
 };
