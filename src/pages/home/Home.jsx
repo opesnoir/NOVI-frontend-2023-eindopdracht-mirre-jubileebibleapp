@@ -2,7 +2,7 @@ import React from 'react';
 import SectionInput from "../../components/SectionInput/SectionInput";
 import Wrapper from "../../components/Wrapper/Wrapper";
 import VideoCard from "../../components/VideoCard/VideoCard";
-import BibleVerseBlock from "../../components/BibleVerseInfo/BibleVerseBlock";
+import BibleVerseBlock from "../../components/BibleVerseBlock/BibleVerseBlock";
 import Tile from "../../components/Tile/Tile";
 import Button from "../../components/Button/Button";
 import {Link} from "react-router-dom";

@@ -20,10 +20,11 @@ const BibleVerseBlock = () => {
                 <div className={styles.card__background}>
                     <TextCard
                         title="De Bijbel"
-                        paragraph="De Bijbel is een verzameling van zesenzestig boeken..."
+                        paragraph="De Bijbel is een verzameling van zesenzestig boeken. Het zijn geen losse boeken, ..."
                     >
                         <Link to="/about-Bible">
                             <Button
+                                className={styles.card__button}
                                 type="button"
                                 name="Lees meer"
                             />

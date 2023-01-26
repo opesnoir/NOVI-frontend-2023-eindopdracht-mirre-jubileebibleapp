@@ -1,8 +1,27 @@
 /*Styling Bible verse block card area*/
-.card__title{
+.inner__container{
+    background: rgba(236, 227, 217, 0.9);
+    width: 98%;
+    height: 95%;
+    padding: 60px 40px;
+    margin-top: 8px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
 
+.card__title{
+    font-size: 38px;
+    font-weight: bold;
+    color: #860E0E;
+    padding-bottom: 8px;
 }
 
 .card__text{
-
+    font-size: 25px;
+    line-height: 40px;
+    color: #062948;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }

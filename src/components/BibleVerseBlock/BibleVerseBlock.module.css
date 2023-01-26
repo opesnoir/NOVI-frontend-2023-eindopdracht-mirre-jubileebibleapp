@@ -1,0 +1,42 @@
+/*Styling container for Bible verse block card area*/
+.card__parent{
+    display: flex;
+    flex-direction: row;
+    margin: 2px 2px;
+    padding: 70px;
+    background-color: #ECE3D9;
+}
+
+.card__background{
+    background-image: url('../../assets/home-pomegranate-pexels-pixabay-65256 copy.jpg');
+    background-repeat: no-repeat;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    min-width: 45%;
+    min-height: 45%;
+    margin: 2em 2em;
+    padding: 2em;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .7);
+}
+
+.card__button{
+    padding: 11px 11px;
+    margin: 35px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    border: 2px solid #410707;
+    border-radius: 30px;
+    box-shadow: 2px 5px 9px rgba(255, 253, 208, 0.2);
+    color: #ECE3E7;
+    background-color: #031424;
+}
+
+.card__button:focus, .card__button:hover{
+    background-color: #860E0E;
+    box-shadow: 2px 5px 9px rgba(255, 253, 208, 0.7);
+}
+
