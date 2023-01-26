@@ -49,6 +49,6 @@
 .card__parent{
     display: flex;
     flex-direction: row;
-    margin: 35px 40px;
-    background-color: #e3e3e3;
+    margin: 35px 2px;
+    background: rgba(6, 41, 72, 0.8);
 }
