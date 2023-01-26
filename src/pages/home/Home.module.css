@@ -1,0 +1,27 @@
+/*Table of content*/
+/*1. Global styles
+2. Typography
+3. Lay-out
+4. Areas
+5. Media Queries*/
+
+/*4. Areas*/
+/*4.1 Hero section*/
+.hero__button{
+    padding: 20px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    border: 3px solid #410707;
+    border-radius: 50px;
+    box-shadow: 2px 5px 9px rgba(255, 253, 208, 0.2);
+    color: #ECE3E7;
+    background-color: #9d1010;
+}
+
+.hero__button:focus, .hero__button:hover{
+    background-color: #860E0E;
+    box-shadow: 2px 5px 9px rgba(255, 253, 208, 0.7);
+}

@@ -9,9 +9,9 @@ import {Link} from "react-router-dom";
 import Image from "../../components/Image/Image";
 import Bible from "../../assets/home-bible-pexels-johnmark-smith-272337.jpg";
 import schapen from "../../assets/home-sheeps-pexels-pixabay-460956.jpg";
-import BibleList from "../../components/BibleList/BibleList";
 import HeroVideo from "../../components/HeroVideo/HeroVideo";
-import schaapVideo from "../../assets/home-video-sheep-production ID_5140592.mp4"
+import schaapVideo from "../../assets/home-video-sheep-production ID_5140592.mp4";
+import styles from "./Home.module.css";
 
 
 
@@ -20,14 +20,21 @@ const Home = () => {
         <>
             <Wrapper>
                 <SectionInput
-                title="Jubilee - zoek een Bijbelvers"
-                paragraphOne="Welkom bij de Jubilee BibleApp. Onze applicatie biedt u de mogelijkheid om Bijbelversen te zoeken op sleutelwoorden in meer dan 40 vertalingen. Hieronder kunt u een selectie van beschikbare Bijbels bekijken. Op onze zoekpagina kunt u een Bijbel selecteren, een zoekterm invoeren en de resultaten bekijken."
+                title="Jubilee BibleApp"
+                paragraphOne="Welkom bij de Jubilee BibleApp. Deze applicatie biedt u de mogelijkheid om Bijbelversen te zoeken op sleutelwoorden in meer dan 40 vertalingen. Op de zoekpagina kunt u een Bijbel selecteren, een zoekterm invoeren en de resultaten bekijken."
                 >
                     <HeroVideo
                         video={schaapVideo}
                         type="video/mp4"
                     />
-                    <BibleList/>
+                    <Link to="/search">
+                        <Button
+                            type="button"
+                            name="Naar zoekpagina"
+                            className={styles.hero__button}
+                        />
+                    </Link>
+
                 </SectionInput>
             </Wrapper>
             <BibleVersInfo/>

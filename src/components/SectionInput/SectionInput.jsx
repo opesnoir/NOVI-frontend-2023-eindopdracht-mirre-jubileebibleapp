@@ -6,9 +6,9 @@ const SectionInput = ({title, paragraphOne, paragraphTwo, children, signature}) 
     return (
         <>
             <article className={styles.hero__parent}>
-                <h1>{title}</h1>
-                <p>{paragraphOne}</p>
-                <p>{paragraphTwo}</p>
+                <h1 className={styles.h1}>{title}</h1>
+                <p className={styles.p}>{paragraphOne}</p>
+                <p className={styles.p}>{paragraphTwo}</p>
                 {children}
                 <p>{signature}</p>
             </article>

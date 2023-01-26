@@ -10,3 +10,22 @@
     overflow: hidden;
     min-height: 70vh;
 }
+
+/*typography*/
+.h1{
+    font-size: 72px;
+    color: #f1f1f1;
+    margin-bottom: 50px;
+    word-spacing: 2px;
+    font-family: "Roboto", sans-serif;
+}
+
+.p{
+    display: flex;
+    flex-direction: row;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: normal;
+    margin: 50px 60px;
+    line-height: 70px;
+}
