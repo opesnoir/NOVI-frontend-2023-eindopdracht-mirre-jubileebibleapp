@@ -14,97 +14,100 @@ import schaapVideo from "../../assets/home-video-sheep-production ID_5140592.mp4
 import styles from "./Home.module.css";
 
 
-
 const Home = () => {
     return (
         <>
-            <Wrapper>
-                <SectionInput
-                title="Jubilee BibleApp"
-                paragraphOne="Welkom bij de Jubilee BibleApp. Deze applicatie biedt u de mogelijkheid om Bijbelversen te zoeken op sleutelwoorden in meer dan 40 vertalingen. Op de zoekpagina kunt u een Bijbel selecteren, een zoekterm invoeren en de resultaten bekijken."
-                >
-                    <HeroVideo
-                        video={schaapVideo}
-                        type="video/mp4"
-                    />
-                    <Link to="/search">
-                        <Button
-                            type="button"
-                            name="Naar zoekpagina"
-                            className={styles.hero__button}
-                        />
-                    </Link>
+            <div className={styles.outer__container}>
+                <div className={styles.inner__container}>
+                    <Wrapper>
+                        <SectionInput
+                            title="Jubilee BibleApp"
+                            paragraphOne="Welkom bij de Jubilee BibleApp. Deze applicatie biedt u de mogelijkheid om Bijbelversen te zoeken op sleutelwoorden in meer dan 40 vertalingen. Op de zoekpagina kunt u een Bijbel selecteren, een zoekterm invoeren en de resultaten bekijken."
+                        >
+                            <HeroVideo
+                                video={schaapVideo}
+                                type="video/mp4"
+                            />
+                            <Link to="/search">
+                                <Button
+                                    type="button"
+                                    name="Naar zoekpagina"
+                                    className={styles.hero__button}
+                                />
+                            </Link>
 
-                </SectionInput>
-            </Wrapper>
-            <BibleVersInfo/>
-            <Wrapper>
-                <VideoBox
-                    width="359"
-                    height="206"
-                    src="https://www.youtube.com/embed/XEjDiMjkVRo"
-                    title="What is the Bible"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                />
-                <VideoBox
-                    width="359"
-                    height="206"
-                    src="https://www.youtube.com/embed/7_CGP-12AE0"
-                    title="Story of the Bible"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                />
-                <VideoBox
-                    width="359"
-                    height="206"
-                    src="https://www.youtube.com/embed/takEeHtRrMw"
-                    title="The New Humanity"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                />
-            </Wrapper>
-            <Wrapper>
-                <Tile
-                    title="Registreren"
-                    paragraph="Registreer je om favoriete Bijbelverzen op te kunnen slaan."
-                >
-                    <Link to="/signup">
-                        <Button
-                            type="button"
-                            onClick="onClick"
-                            name="Ga naar registreren "
+                        </SectionInput>
+                    </Wrapper>
+                    <BibleVersInfo/>
+                    <Wrapper>
+                        <VideoBox
+                            width="359"
+                            height="206"
+                            src="https://www.youtube.com/embed/XEjDiMjkVRo"
+                            title="What is the Bible"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         />
-                    </Link>
-                </Tile>
-                <Image
-                    image={Bible}
-                    alt="Een Bijbel"
-                />
-            </Wrapper>
-            <Wrapper>
-                <Image
-                    image={schapen}
-                    alt="Afbeelding van twee schapen"
-                />
-                <Tile
-                    title="Aanmelden"
-                    paragraph="Op de hoogte blijven van ontwikkelingen? Meld je dan aan voor de nieuwsbrief."
-                >
-                    <form action="">
-                        <label htmlFor="" placeholder="Email">Email:</label>
-                        <input type="email"/>
-                    </form>
-                    <Button
-                        type="button"
-                        onClick="onClick"
-                        name="Aanmelden"
-                    />
-                    <label>
-                        <input
-                            type="checkbox"
+                        <VideoBox
+                            width="359"
+                            height="206"
+                            src="https://www.youtube.com/embed/7_CGP-12AE0"
+                            title="Story of the Bible"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         />
-                        Ik ga akkoord met het verzenden van mijn e-mailadres.
-                    </label>
-                </Tile>
-            </Wrapper>
+                        <VideoBox
+                            width="359"
+                            height="206"
+                            src="https://www.youtube.com/embed/takEeHtRrMw"
+                            title="The New Humanity"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        />
+                    </Wrapper>
+                    <Wrapper>
+                        <Tile
+                            title="Registreren"
+                            paragraph="Registreer je om favoriete Bijbelverzen op te kunnen slaan."
+                        >
+                            <Link to="/signup">
+                                <Button
+                                    type="button"
+                                    onClick="onClick"
+                                    name="Ga naar registreren "
+                                />
+                            </Link>
+                        </Tile>
+                        <Image
+                            image={Bible}
+                            alt="Een Bijbel"
+                        />
+                    </Wrapper>
+                    <Wrapper>
+                        <Image
+                            image={schapen}
+                            alt="Afbeelding van twee schapen"
+                        />
+                        <Tile
+                            title="Aanmelden"
+                            paragraph="Op de hoogte blijven van ontwikkelingen? Meld je dan aan voor de nieuwsbrief."
+                        >
+                            <form action="">
+                                <label htmlFor="" placeholder="Email">Email:</label>
+                                <input type="email"/>
+                            </form>
+                            <Button
+                                type="button"
+                                onClick="onClick"
+                                name="Aanmelden"
+                            />
+                            <label>
+                                <input
+                                    type="checkbox"
+                                />
+                                Ik ga akkoord met het verzenden van mijn e-mailadres.
+                            </label>
+                        </Tile>
+                    </Wrapper>
+                </div>
+            </div>
         </>
     );
 };
