@@ -10,7 +10,7 @@ const BibleVerseBlock = () => {
 
     return (
         <>
-            <div className={styles.card}>
+            <div className={styles.card__parent}>
                 <div className={styles.card__background}>
                     <TextCard
                         title="Bijbeltekst van de dag"

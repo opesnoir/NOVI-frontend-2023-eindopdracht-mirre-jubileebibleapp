@@ -1,8 +1,20 @@
 /*Styling container for Bible verse block card area*/
-.card{
-    background-color: #ECE3E7;
+.card__parent{
+    display: flex;
+    flex-direction: row;
+    margin: 2px 2px;
+    padding: 70px;
+    background-color: #ECE3D9;
 }
+
 .card__background{
     background-image: url('../../assets/home-pomegranate-pexels-pixabay-65256 copy.jpg');
-
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    min-width: 45%;
+    min-height: 48%;
+    margin: 2em 2em;
+    padding: 8em;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .7);
 }
