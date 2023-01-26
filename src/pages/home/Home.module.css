@@ -44,3 +44,11 @@
     background-color: #860E0E;
     box-shadow: 2px 5px 9px rgba(255, 253, 208, 0.7);
 }
+
+/*4.2 card section*/
+
+.card__parent{
+    display: flex;
+    flex-direction: row;
+    margin: 35px 40px;
+}
