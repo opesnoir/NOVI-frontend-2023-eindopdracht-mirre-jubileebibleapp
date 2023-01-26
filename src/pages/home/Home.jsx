@@ -1,7 +1,7 @@
 import React from 'react';
 import SectionInput from "../../components/SectionInput/SectionInput";
 import Wrapper from "../../components/Wrapper/Wrapper";
-import VideoBox from "../../components/VideoBox/VideoBox";
+import VideoCard from "../../components/VideoCard/VideoCard";
 import BibleVersInfo from "../../components/BibleVersInfo/BibleVersInfo";
 import Tile from "../../components/Tile/Tile";
 import Button from "../../components/Button/Button";
@@ -40,21 +40,21 @@ const Home = () => {
                     </Wrapper>
                     <BibleVersInfo/>
                     <Wrapper>
-                        <VideoBox
+                        <VideoCard
                             width="359"
                             height="206"
                             src="https://www.youtube.com/embed/XEjDiMjkVRo"
                             title="What is the Bible"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         />
-                        <VideoBox
+                        <VideoCard
                             width="359"
                             height="206"
                             src="https://www.youtube.com/embed/7_CGP-12AE0"
                             title="Story of the Bible"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         />
-                        <VideoBox
+                        <VideoCard
                             width="359"
                             height="206"
                             src="https://www.youtube.com/embed/takEeHtRrMw"

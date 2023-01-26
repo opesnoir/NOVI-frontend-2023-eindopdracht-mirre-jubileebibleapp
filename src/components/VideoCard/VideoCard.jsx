@@ -1,12 +1,12 @@
 import React from 'react';
-import styles from './VideoBox.module.css'
+import styles from './VideoCard.module.css'
 
-const VideoBox = ({width, height, src, title, allow,}) => {
+const VideoCard = ({width, height, src, title, allow,}) => {
     return (
         <>
-            <div>
+            <div className={styles.card}>
                 <iframe
-                    className={styles.frame}
+                    className={styles.card__frame}
                     width={width}
                     height={height}
                     src={src}
@@ -15,12 +15,12 @@ const VideoBox = ({width, height, src, title, allow,}) => {
                     allowFullScreen>
                 </iframe>
                 <article>
-                    <p>Youtube</p>
-                    <h5>{title}</h5>
+                    <p className={styles.card__text}>Youtube</p>
+                    <h5 className={styles.card__title}>{title}</h5>
                 </article>
             </div>
         </>
     );
 };
 
-export default VideoBox;
+export default VideoCard;
