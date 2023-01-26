@@ -1,0 +1,8 @@
+/*Styling container for Bible verse block card area*/
+.card{
+    background-color: #ECE3E7;
+}
+.card__background{
+    background-image: url('../../assets/home-pomegranate-pexels-pixabay-65256 copy.jpg');
+
+}

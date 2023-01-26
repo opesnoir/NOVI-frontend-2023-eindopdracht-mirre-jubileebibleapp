@@ -2,7 +2,7 @@ import React from 'react';
 import SectionInput from "../../components/SectionInput/SectionInput";
 import Wrapper from "../../components/Wrapper/Wrapper";
 import VideoCard from "../../components/VideoCard/VideoCard";
-import BibleVersInfo from "../../components/BibleVersInfo/BibleVersInfo";
+import BibleVerseBlock from "../../components/BibleVerseInfo/BibleVerseBlock";
 import Tile from "../../components/Tile/Tile";
 import Button from "../../components/Button/Button";
 import {Link} from "react-router-dom";
@@ -12,6 +12,7 @@ import schapen from "../../assets/home-sheeps-pexels-pixabay-460956.jpg";
 import HeroVideo from "../../components/HeroVideo/HeroVideo";
 import schaapVideo from "../../assets/home-video-sheep-production ID_5140592.mp4";
 import styles from "./Home.module.css";
+import TextCard from "../../components/TextCard/TextCard";
 
 
 const Home = () => {
@@ -35,7 +36,7 @@ const Home = () => {
                             />
                         </Link>
                     </SectionInput>
-                    <BibleVersInfo/>
+                    <BibleVerseBlock/>
                     <div className={styles.card__parent}>
                         <VideoCard
                             width="359"
