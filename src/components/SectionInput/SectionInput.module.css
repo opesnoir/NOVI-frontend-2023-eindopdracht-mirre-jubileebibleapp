@@ -1,0 +1,12 @@
+.hero__parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(6, 41, 72, 0.8);
+    margin-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+    min-height: 70vh;
+}
