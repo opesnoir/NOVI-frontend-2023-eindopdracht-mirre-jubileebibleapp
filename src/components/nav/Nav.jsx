@@ -1,8 +1,10 @@
 import React, {useContext} from 'react';
 import {NavLink} from "react-router-dom";
-import logo from "../../assets/logo-jubilee-bibleapp-high-resolution-logo-white-on-transparent-background.png"
+import logo from "../../assets/oudlogo-jubilee-bibleapp-high-resolution-logo-white-on-transparent-background.png"
 import {AiOutlineUser, AiOutlineUserAdd} from "react-icons/ai";
 import {AuthContext} from "../../context/AuthContext";
+import styles from "./Nav.module.css";
+
 
 const Nav = () => {
 
@@ -17,11 +19,11 @@ const Nav = () => {
     return (
         <>
             <nav>
-                <div>
+                <div className={styles.nav__container}>
                     <ul>
                         <li><NavLink to="/">Home</NavLink></li>
                         <li><NavLink to="/about">Over</NavLink></li>
-                        <img src={logo} alt="Jubilee Logo"/>
+                        <img className={styles.nav__logo} src={logo} alt="Jubilee Logo"/>
                         { isAuth ?
                             <>
                                 <li><NavLink to="/profile">Profielpagina</NavLink></li>
