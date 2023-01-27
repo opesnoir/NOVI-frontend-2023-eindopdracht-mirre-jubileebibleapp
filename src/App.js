@@ -12,10 +12,11 @@ import Profile from "./pages/profile/Profile";
 import Favorite from "./pages/favorite/Favorite";
 import NotFound from "./pages/notFound/NotFound";
 import Search from "./pages/search/Search";
+import {AuthContext} from "./context/AuthContext";
+import {useContext} from "react";
 
 function App() {
-
-    const auth = false;
+const {isAuth} = useContext(AuthContext);
 
     return (
     <>
@@ -29,10 +30,10 @@ function App() {
             <Route path="/signup" element={<Register/>}></Route>
             <Route path="/signin" element={<Login/>}></Route>
             <Route path="/favorite" element={<Favorite/>}></Route>
-            <Route path="/profile" element={auth === true ? <Profile/> : <Navigate to="/signup"/>}></Route>
+            <Route path="/profile" element={isAuth === true ? <Profile/> : <Navigate to="/signup"/>}></Route>
             {/*profile van styling voorzien:*/}
             {/*<Route path="/profile" element={<Profile/>}></Route>*/}
-            <Route path="/favorite-auth" element={auth === true ? <Favorite/> : <Navigate to="/search"/>}></Route>
+            <Route path="/favorite-auth" element={isAuth === true ? <Favorite/> : <Navigate to="/search"/>}></Route>
             <Route path="*" element={<NotFound/>}></Route>
         </Routes>
         <Footer/>

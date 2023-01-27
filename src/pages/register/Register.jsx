@@ -20,23 +20,20 @@ const Register = () => {
 
 
     //function for handeling the submit
-    function handleFormSubmit(data) {
-        console.log(data)
-    }
+    // function handleFormSubmit(data) {
+    //     console.log(data)
+    // }
 
     // function to register user
-    async function registerUser(e, {username, email, password}) {
-        e.preventDefault()
+    async function registerUser(data) {
+        console.log(data)
         console.log( "Gebruiker geregistreerd" )
         try {
             const response = await axios.post('https://frontend-educational-backend.herokuapp.com/api/auth/signup',{
-                "username": username,
-                "email": email,
-                "password": password,
+                "username": data.name,
+                "email": data.email,
+                "password": data.password,
                 "roles": ["user"],
-            },{
-                "Content-Type": "application/json",
-                "Authorization": `Bearer ${token}`
             })
             console.log(response);
             /*login( response.data.accessToken )*/

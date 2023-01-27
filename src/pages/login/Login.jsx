@@ -5,9 +5,8 @@ import Wrapper from "../../components/Wrapper/Wrapper";
 import Button from "../../components/Button/Button";
 import schapen from "../../assets/register-schapen-pexels-trinity-kubassek-288621 (1).jpg"
 import Image from "../../components/Image/Image";
-import axios from "axios";
-import jwt_decode from "jwt-decode";
 import {AuthContext} from "../../context/AuthContext";
+import axios from "axios";
 
 const Login = () => {
 
@@ -16,8 +15,22 @@ const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
     const {login} = useContext(AuthContext);
 
-    function handleFormSubmit(data) {
+/*    function handleFormSubmit(data) {
         console.log(data)
+    }*/
+
+    async function handleLogin(data) {
+        console.log(data)
+        try {
+            const response = await axios.post('https://frontend-educational-backend.herokuapp.com/api/auth/signin',{
+                "username": data.name,
+                "password" : data.password,
+            })
+            console.log(response)
+            login( response.data.accessToken )
+        } catch ( e ) {
+            console.error( e )
+        }
     }
 
 
@@ -26,7 +39,7 @@ const Login = () => {
             <Wrapper>
                 <h1>Login</h1>
             </Wrapper>
-            <form onSubmit={handleSubmit(handleFormSubmit)}>
+            <form onSubmit={handleSubmit(handleLogin)}>
                 <FormInput
                     inputType="text"
                     inputName="name"

@@ -1,15 +1,13 @@
 import React from 'react';
-import Button from "../Button/Button";
-import Wrapper from "../Wrapper/Wrapper";
-import {Link} from "react-router-dom";
+import styles from "./Tile.module.css";
 
 const Tile = ({title, paragraph, children}) => {
     return (
         <>
             <div>
-                <div>
-                    <h2>{title}</h2>
-                    <p>{paragraph}</p>
+                <div className={styles.tile__container__inner}>
+                    <h2 className={styles.tile__h}>{title}</h2>
+                    <p className={styles.tile__p}>{paragraph}</p>
                     {children}
                 </div>
             </div>

@@ -48,15 +48,14 @@ function AuthContextProvider({children}) {
     function login(jwt) {
         console.log("gebruiker ingelogd")
         localStorage.setItem('token', jwt)
-        const decodedToken = jwt_decode(jwt);
 
-        void fetchUserData(jwt, decodedToken.sub, "/profile")
+        void fetchUserData(jwt, "/profile")
     }
 
-    async function fetchUserData(jwt, id, redirect) {
+    async function fetchUserData(jwt, redirect) {
         try {
             // get userdata
-            const response = await axios.get(`https://frontend-educational-backend.herokuapp.com/api/user/${id}`, {
+            const response = await axios.get(`https://frontend-educational-backend.herokuapp.com/api/user`, {
                 headers: {
                     "Content-Type": "application/json",
                     Authorization: `Bearer ${jwt}`,

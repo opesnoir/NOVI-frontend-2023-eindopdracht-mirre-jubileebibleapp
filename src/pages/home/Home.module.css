@@ -63,17 +63,16 @@
 }
 
 .tile__sheep{
-    width: 50%;
+    width: 70%;
     height: 490px;
     background-image: url("../../assets/home-sheeps-pexels-pixabay-460956.jpg");
     background-size: cover;
-    margin-bottom: 70px;
+    margin-bottom: 78px;
 }
 
 .tile__bible{
-    width: 50%;
+    width: 54%;
     height: 490px;
     background-image: url("../../assets/home-bible-pexels-johnmark-smith-272337.jpg");
     background-size: cover;
-
 }
