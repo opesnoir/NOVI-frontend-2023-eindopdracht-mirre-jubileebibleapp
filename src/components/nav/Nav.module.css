@@ -65,3 +65,13 @@ nav a:focus{
     align-items: center;
 }
 
+.nav__logout{
+    font-weight: bold;
+    color: #860E0E;
+    text-decoration: #062948;
+}
+
+.nav__button:focus, .nav__button:hover{
+    background-color: #860E0E;
+    box-shadow: 2px 5px 9px rgba(255, 253, 208, 0.7);
+}

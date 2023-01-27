@@ -4,6 +4,8 @@ import logo from "../../assets/oudlogo-jubilee-bibleapp-high-resolution-logo-whi
 import {AiOutlineUser, AiOutlineUserAdd} from "react-icons/ai";
 import {AuthContext} from "../../context/AuthContext";
 import styles from "./Nav.module.css";
+import {IoIosLogOut} from "react-icons/io";
+import {CgProfile} from "react-icons/cg";
 
 
 const Nav = () => {
@@ -27,8 +29,8 @@ const Nav = () => {
                         <img className={styles.nav__logo} src={logo} alt="Jubilee Logo"/>
                         { isAuth ?
                             <>
-                                <li><NavLink to="/profile">Profielpagina</NavLink></li>
-                                <li><button type="button" onClick={handleLogout}>Uitloggen</button></li>
+                                <li><NavLink to="/profile"><CgProfile/>Profielpagina</NavLink></li>
+                                <li><NavLink className={styles.nav__logout} type="text" onClick={handleLogout}> <IoIosLogOut/>Uitloggen</NavLink></li>
                             </>
                             :
                             <>
