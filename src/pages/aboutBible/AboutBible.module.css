@@ -1,0 +1,16 @@
+.about__p, .about__a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 10px;
+    margin: 20px 125px;
+    color: #002855;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    line-height: 50px;
+}
+
+.about__a{
+    color: #860E0E;
+}
