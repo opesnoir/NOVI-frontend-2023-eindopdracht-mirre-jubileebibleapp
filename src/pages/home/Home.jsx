@@ -60,7 +60,7 @@ const Home = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         />
                     </div>
-                    <Wrapper>
+                    <div className={styles.tile__container1}>
                         <Tile
                             title="Registreren"
                             paragraph="Registreer je om favoriete Bijbelverzen op te kunnen slaan."
@@ -73,17 +73,10 @@ const Home = () => {
                                 />
                             </Link>
                         </Tile>
-                        <Image
-                            image={Bible}
-                            alt="Een Bijbel"
-                        />
-                    </Wrapper>
-                    <div className={styles.tile__container}>
-                        {/*<Image
-                            image={schapen}
-                            alt="Afbeelding van twee schapen"
-                        />*/}
-                        <div className={styles.tile__image}></div>
+                        <div className={styles.tile__bible}></div>
+                    </div>
+                    <div className={styles.tile__container2}>
+                        <div className={styles.tile__sheep}></div>
                         <Tile
                             title="Aanmelden"
                             paragraph="Op de hoogte blijven van ontwikkelingen? Meld je dan aan voor de nieuwsbrief."
