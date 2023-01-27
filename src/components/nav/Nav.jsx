@@ -23,22 +23,22 @@ const Nav = () => {
             <div>
                 <div className={styles.nav__container}>
                     <nav>
-                    <ul>
-                        <li><NavLink to="/">Home</NavLink></li>
-                        <li><NavLink to="/about">Over</NavLink></li>
-                        <img className={styles.nav__logo} src={logo} alt="Jubilee Logo"/>
-                        { isAuth ?
-                            <>
-                                <li><NavLink to="/profile"><CgProfile/>Profielpagina</NavLink></li>
-                                <li><NavLink className={styles.nav__logout} type="text" onClick={handleLogout}> <IoIosLogOut/>Uitloggen</NavLink></li>
-                            </>
-                            :
-                            <>
-                                <li><NavLink to="/signup"><AiOutlineUserAdd/>Registreer</NavLink></li>
-                                <li><NavLink to="/signin"><AiOutlineUser/>Login</NavLink></li>
-                            </>
-                            }
-                    </ul>
+                        <ul>
+                            <li><NavLink to="/">Home</NavLink></li>
+                            <li><NavLink to="/about">Over</NavLink></li>
+                            <img className={styles.nav__logo} src={logo} alt="Jubilee Logo"/>
+                            { isAuth ?
+                                <>
+                                    <li><NavLink to="/profile"><CgProfile/>Profielpagina</NavLink></li>
+                                    <li><NavLink className={styles.nav__logout} type="text" onClick={handleLogout}><IoIosLogOut/>Uitloggen</NavLink></li>
+                                </>
+                                :
+                                <>
+                                    <li><NavLink to="/signup"><AiOutlineUserAdd/>Registreer</NavLink></li>
+                                    <li><NavLink to="/signin"><AiOutlineUser/>Login</NavLink></li>
+                                </>
+                                }
+                        </ul>
                     </nav>
                 </div>
             </div>
