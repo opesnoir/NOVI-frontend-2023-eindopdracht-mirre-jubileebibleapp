@@ -67,6 +67,7 @@ const Home = () => {
                         >
                             <Link to="/signup">
                                 <Button
+                                    className={styles.tile__register__button}
                                     type="button"
                                     onClick="onClick"
                                     name="Ga naar registreren "

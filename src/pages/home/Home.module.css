@@ -76,3 +76,15 @@
     background-image: url("../../assets/home-bible-pexels-johnmark-smith-272337.jpg");
     background-size: cover;
 }
+
+.tile__register__button{
+    background-color: #DD181C;
+    border: #860E0E 2px solid;
+    color: #ECE3E7;
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 20px 20px;
+    border-radius: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+}

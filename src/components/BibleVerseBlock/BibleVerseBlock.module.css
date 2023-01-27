@@ -9,7 +9,7 @@
 
 .card__background{
     background-image: url('../../assets/home-pomegranate-pexels-pixabay-65256 copy.jpg');
-    background-repeat: no-repeat;
+    background-repeat: space ;
     align-items: center;
     align-content: center;
     justify-content: center;

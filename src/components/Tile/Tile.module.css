@@ -13,8 +13,9 @@
     padding-top: 50px;
     color: #062948;
     font-family: 'Inter', sans-serif;
-    font-size: 50px;
+    font-size: 43px;
     font-weight: lighter;
+    text-transform: uppercase;
 }
 
 .tile__p{
