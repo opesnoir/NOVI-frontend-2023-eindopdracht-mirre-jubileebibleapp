@@ -14,6 +14,7 @@ import NotFound from "./pages/notFound/NotFound";
 import Search from "./pages/search/Search";
 import {AuthContext} from "./context/AuthContext";
 import {useContext} from "react";
+import styles from "./App.css";
 
 function App() {
 const {isAuth} = useContext(AuthContext);
