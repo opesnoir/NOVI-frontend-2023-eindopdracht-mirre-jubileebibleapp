@@ -2,7 +2,7 @@ import React from 'react';
 import styles from "./SectionInput.module.css";
 
 //component for the about pages
-const SectionInput = ({title, paragraphOne, paragraphTwo, children, signature, classNameSignature}) => {
+const SectionInput = ({title, paragraphOne, paragraphTwo, children}) => {
     return (
         <>
             <article className={styles.hero__parent}>
@@ -10,7 +10,6 @@ const SectionInput = ({title, paragraphOne, paragraphTwo, children, signature, c
                 <p className={styles.p}>{paragraphOne}</p>
                 <p className={styles.p}>{paragraphTwo}</p>
                 {children}
-                <p className={classNameSignature}>{signature}</p>
             </article>
         </>
     );

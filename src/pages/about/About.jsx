@@ -1,13 +1,12 @@
 import React from 'react';
-import SectionInput from "../../components/SectionInput/SectionInput";
 import Image from "../../components/Image/Image";
 import schaap from "../../assets/about-sheep-pexels-arthur-swiffen-12550240 copy.jpg"
-import styles from "./About.module.css"
+import AboutInput from "../../components/AboutInput/AboutInput";
 
 const About = () => {
     return (
         <>
-            <SectionInput
+            <AboutInput
                 title="Over mij"
                 paragraphOne="“Uw woord is een lamp voor mijn voet, en een licht op mijn pad.”
                                 (Psalm 119:105). Dat
@@ -19,7 +18,6 @@ const About = () => {
                                 kompas. Ik hoop dan ook dat de Bijbel jou net zo zal inspireren en dat het een licht
                                 voor jouw voeten mag zijn."
                 signature="Mirre"
-                classNameSignature={styles.section__signature}
             />
             <Image
                 image={schaap}
