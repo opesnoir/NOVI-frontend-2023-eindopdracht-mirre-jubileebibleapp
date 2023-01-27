@@ -8,6 +8,8 @@
     box-sizing: border-box;
     margin: 1rem auto;
     background-color: #f7f0f0;
+    position: fixed;
+    z-index: 1;
 }
 
 ul{
