@@ -12,7 +12,7 @@ import schapen from "../../assets/home-sheeps-pexels-pixabay-460956.jpg";
 import HeroVideo from "../../components/HeroVideo/HeroVideo";
 import schaapVideo from "../../assets/home-video-sheep-production ID_5140592.mp4";
 import styles from "./Home.module.css";
-import TextCard from "../../components/TextCard/TextCard";
+
 
 
 const Home = () => {
@@ -78,11 +78,12 @@ const Home = () => {
                             alt="Een Bijbel"
                         />
                     </Wrapper>
-                    <Wrapper>
-                        <Image
+                    <div className={styles.tile__container}>
+                        {/*<Image
                             image={schapen}
                             alt="Afbeelding van twee schapen"
-                        />
+                        />*/}
+                        <div className={styles.tile__image}></div>
                         <Tile
                             title="Aanmelden"
                             paragraph="Op de hoogte blijven van ontwikkelingen? Meld je dan aan voor de nieuwsbrief."
@@ -103,7 +104,7 @@ const Home = () => {
                                 Ik ga akkoord met het verzenden van mijn e-mailadres.
                             </label>
                         </Tile>
-                    </Wrapper>
+                    </div>
                 </div>
             </div>
         </>

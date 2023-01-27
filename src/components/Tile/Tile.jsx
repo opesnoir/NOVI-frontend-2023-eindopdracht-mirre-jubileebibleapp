@@ -6,12 +6,13 @@ import {Link} from "react-router-dom";
 const Tile = ({title, paragraph, children}) => {
     return (
         <>
-            <Wrapper>
-                <h2>{title}</h2>
-                <p>{paragraph}</p>
-                {children}
-            </Wrapper>
-
+            <div>
+                <div>
+                    <h2>{title}</h2>
+                    <p>{paragraph}</p>
+                    {children}
+                </div>
+            </div>
         </>
     );
 };
