@@ -16,7 +16,7 @@
     min-width: 45%;
     min-height: 45%;
     margin: 2em 2em;
-    padding: 2em;
+    padding: 30px;
     box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .7);
 }
 
@@ -33,6 +33,14 @@
     box-shadow: 2px 5px 9px rgba(255, 253, 208, 0.2);
     color: #ECE3E7;
     background-color: #031424;
+}
+
+/*button centreren*/
+a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .card__button:focus, .card__button:hover{

@@ -83,14 +83,10 @@ const Home = () => {
                             paragraph="Op de hoogte blijven van ontwikkelingen? Meld je dan aan voor de nieuwsbrief."
                         >
                             <form action="">
-                                <label htmlFor="" placeholder="Email">Email:</label>
-                                <input type="email"/>
+                                <label htmlFor="" className={styles.tile__form__label}  placeholder="Email">Email:</label>
+                                <input className={styles.tile__label__input} type="email"/>
+                                <button type="button" className={styles.tile__aanmelden__button} >aanmelden</button>
                             </form>
-                            <Button
-                                type="button"
-                                onClick="onClick"
-                                name="Aanmelden"
-                            />
                             <label>
                                 <input
                                     type="checkbox"

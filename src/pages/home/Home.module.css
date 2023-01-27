@@ -49,7 +49,7 @@
 .card__parent{
     display: flex;
     flex-direction: row;
-    margin: 2px 2px;
+    margin: 1px 2px;
     padding: 70px;
     background: rgba(6, 41, 72, 0.8);
     position: relative;
@@ -67,7 +67,7 @@
     height: 490px;
     background-image: url("../../assets/home-sheeps-pexels-pixabay-460956.jpg");
     background-size: cover;
-    margin-bottom: 78px;
+    margin-bottom: 79px;
 }
 
 .tile__bible{
@@ -87,4 +87,34 @@
     border-radius: 35px;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.tile__form__label{
+    padding-top: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: lowercase;
+    font-family: 'Inter', sans-serif;
+    color: #4f4f4f;
+}
+
+.tile__label__input{
+    padding: 12px 120px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #062948;
+}
+
+.tile__aanmelden__button{
+    padding: 17px 21px;
+    margin-top: 30px;
+    background-color: #062948;
+    color: #ECE3E7;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
 }
