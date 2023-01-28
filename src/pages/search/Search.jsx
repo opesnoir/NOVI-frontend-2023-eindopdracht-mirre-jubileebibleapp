@@ -114,7 +114,7 @@ const Search = () => {
                                     </option>
                                 ))}
                             </select>
-                            <label htmlFor="searchTerm">Voer een zoekterm in:</label>
+                            <label htmlFor="searchTerm" className={styles.search__label}>Voer een zoekterm in:</label>
                             <input
                                 className={styles.search__input}
                                 type="text"

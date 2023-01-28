@@ -105,11 +105,11 @@ const Favorite = () => {
 
     return (
         <>
-            <div className={styles.outerContainer}>
-                <div className={styles.innerContainer}>
+            <div className={styles.search__container__outer}>
+                <div className={styles.search__container__inner}>
                     <div>
-                        <form onSubmit={handleSearch} className={styles.formContainer}>
-                            <label htmlFor="bible" className={styles.label}>Selecteer een Bijbel:</label>
+                        <form onSubmit={handleSearch} className={styles.search__form__container}>
+                            <label htmlFor="bible" className={styles.search__label}>Selecteer een Bijbel:</label>
                             <select
                                 name="bible"
                                 id="bible"
@@ -121,8 +121,9 @@ const Favorite = () => {
                                     </option>
                                 ))}
                             </select>
-                            <label htmlFor="searchTerm" className={styles.label}>Voer een zoekterm in:</label>
+                            <label htmlFor="searchTerm" className={styles.search__label}>Voer een zoekterm in:</label>
                             <input
+                                className={styles.search__input}
                                 type="text"
                                 name="searchTerm"
                                 value={searchTerm}
@@ -130,19 +131,19 @@ const Favorite = () => {
                             <button type="submit">Zoeken</button>
                         </form>
                         {error &&
-                            <span className={styles.errorTekst}>Er is een fout opgetreden: De Bijbeltaal en zoektermtaal dienen overeen te komen. {error.message}</span>}
+                            <span className={styles.search__error}>Er is een fout opgetreden: De Bijbeltaal en zoektermtaal dienen overeen te komen. {error.message}</span>}
                         <hr/>
-                        {loading && <span className={styles.loadingTekst}>Loading...</span>}
+                        {loading && <span className={styles.search__loading}>Loading...</span>}
                         {totalResults > 0 && (
-                            <p className={styles.results}>Totaal aantal resultaten: <span
-                                className={styles.resultsAmount}>{totalResults}</span></p>
+                            <p className={styles.search__results}>Totaal aantal resultaten: <span
+                                className={styles.search__amount}>{totalResults}</span></p>
                         )}
                         {currentPost.length > 0 && (
-                            <ul className={styles.ul}>
+                            <ul className={styles.search__ul}>
                                 {currentPost.map((result) =>
                                     <>
-                                        <li key={result.id} className={`${styles.list} search-result-item`}>
-                                            <span className={styles.reference}>{result.reference}</span>
+                                        <li key={result.id} className={`${styles.search__list} search-result-item`}>
+                                            <span className={styles.search__reference}>{result.reference}</span>
                                             <span>{result.text}</span>
                                             <button onClick={()=> addFave(result)} type="button"><AiOutlineHeart/></button>
                                         </li>
