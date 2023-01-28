@@ -116,6 +116,7 @@ const Search = () => {
                             </select>
                             <label htmlFor="searchTerm">Voer een zoekterm in:</label>
                             <input
+                                className={styles.search__input}
                                 type="text"
                                 name="searchTerm"
                                 value={searchTerm}
@@ -133,7 +134,7 @@ const Search = () => {
                         {currentPost.length > 0 && (
                             <ul>
                                 {currentPost.map((result) =>
-                                    <li key={result.id} /*className={`${styles.list} search-result-item`}*/>
+                                    <li key={result.id} className={`${styles.search__list} search-result-item`}>
                                         <span>{result.reference}</span>
                                         <span>{result.text}</span>
                                     </li>
