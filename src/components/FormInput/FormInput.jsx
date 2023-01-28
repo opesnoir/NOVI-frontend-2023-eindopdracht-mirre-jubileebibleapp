@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from "./FormInput.module.css";
+import Button from "../Button/Button";
 
 const FormInput = ({inputId, inputLabel, inputType, inputName, placeholder, validationRules, register, errors}) => {
     return (

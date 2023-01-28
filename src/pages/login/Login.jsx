@@ -46,7 +46,7 @@ const Login = () => {
                             inputName="name"
                             inputId="name-field"
                             /*inputLabel="Gebruikersnaam:"*/
-                            placeholder="Gebruikersnaam"
+                            placeholder="Gebruikersnaam:"
                             validationRules={{
                                 required: {
                                     value: true,
@@ -61,7 +61,7 @@ const Login = () => {
                             inputName="password"
                             inputId="password-field"
                             /*inputLabel="Wachtwoord:"*/
-                            placeholder="wachtwoord"
+                            placeholder="Wachtwoord:"
                             validationRules={{
                                 required: {
                                     value: true,

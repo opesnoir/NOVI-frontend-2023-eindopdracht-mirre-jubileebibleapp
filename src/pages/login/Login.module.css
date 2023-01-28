@@ -1,4 +1,4 @@
-/*styles from*/
+/*styles login from*/
 
 .container__outer{
     display: flex;
@@ -26,16 +26,16 @@
     font-weight: bold;
 }
 
-.form__checkbox{
-    color: #062948;
-    margin: 1px 40px 15px 50px;
-}
-
 .form__container{
     display: flex;
     justify-content: center;
     text-align: center;
     padding: 20px 30px;
+}
+
+.form__checkbox{
+    color: #062948;
+    margin: 1px 40px 15px 50px;
 }
 
 .form__button{
