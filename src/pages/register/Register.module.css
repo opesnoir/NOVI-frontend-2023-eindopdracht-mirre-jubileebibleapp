@@ -1,1 +1,72 @@
-/*styling is located in Login.module.css*/
+/*styling is located in Login.module.css. Below the styles that are used:*/
+/*styles login from*/
+/*.container__outer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #062948;
+}
+
+.container__inner{
+    width: 80%;
+    padding: 50px 50px;
+    margin: 120px 120px;
+    background-color: #f7f0f0;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px 10px;
+    margin: 10px 10px;
+    color: #002855;
+    font-size: 45px;
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+}
+
+.form__container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.form__checkbox{
+    color: #062948;
+    margin: 1px 40px 15px 50px;
+}
+
+.form__button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #062948;
+    color: #f7f0f0;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1px;
+    border-color: #860E0E;
+    padding: 8px 24px;
+    margin: 60px 10px 10px 10px;
+    border-radius: 20px;
+    box-shadow: 2px 5px 9px rgba(0, 0, 0, 0.2);
+}
+
+.form__button:focus, .form__button:hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #860E0E;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1px;
+    border-color: #062948;
+    padding: 8px 24px;
+    margin: 60px 10px 10px 10px;
+    border-radius: 20px;
+    box-shadow: 2px 5px 9px rgba(0, 0, 0, 0.5);
+}*/
