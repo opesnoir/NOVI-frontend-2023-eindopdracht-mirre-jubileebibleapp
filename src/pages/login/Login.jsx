@@ -45,7 +45,8 @@ const Login = () => {
                             inputType="text"
                             inputName="name"
                             inputId="name-field"
-                            inputLabel="Gebruikersnaam:"
+                            /*inputLabel="Gebruikersnaam:"*/
+                            placeholder="Gebruikersnaam"
                             validationRules={{
                                 required: {
                                     value: true,
@@ -59,7 +60,8 @@ const Login = () => {
                             inputType={showPassword ? "text" : "password"}
                             inputName="password"
                             inputId="password-field"
-                            inputLabel="Wachtwoord:"
+                            /*inputLabel="Wachtwoord:"*/
+                            placeholder="wachtwoord"
                             validationRules={{
                                 required: {
                                     value: true,
@@ -87,6 +89,8 @@ const Login = () => {
                             Wachtwoord tonen
                         </label>
                         <Button
+                            className={styles.form__button}
+                            container={styles.form__container}
                             type="submit"
                             name="Inloggen"
                         />

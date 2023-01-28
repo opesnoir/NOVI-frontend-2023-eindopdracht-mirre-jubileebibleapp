@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "./FormInput.module.css";
 
-const FormInput = ({inputId, inputLabel, inputType, inputName, validationRules, register, errors}) => {
+const FormInput = ({inputId, inputLabel, inputType, inputName, placeholder, validationRules, register, errors}) => {
     return (
         <>
             <label className={styles.input__label} htmlFor={inputId}>
@@ -10,6 +10,7 @@ const FormInput = ({inputId, inputLabel, inputType, inputName, validationRules, 
                     className={styles.input__tekst}
                     type={inputType}
                     id={inputId}
+                    placeholder={placeholder}
                     {...register(inputName, validationRules)}
                 />
             </label>
