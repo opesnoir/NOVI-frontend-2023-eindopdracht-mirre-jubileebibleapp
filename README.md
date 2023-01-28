@@ -1,23 +1,28 @@
 JUBILEE BIBLEAPP
 
-Invoegen:
-1. Beschrijving waar het project over gaat;
-2. Screenshot van de applicatie invoegen;
-3. Beschrijving hoe andere developers de applicatie kunnen runnen.
+Jubilee BibleApp is a web application that allows users to search for and access Bible verses. The app utilizes the API.Bible and A Biblia digital APIs to provide a comprehensive collection of Bibles and background information on Bible books.
 
-1. Beschrijving waar het project over gaat;
-   Het Christelijke geloof is het fundament van mijn bestaan, daarom heb ik deze applicatie gebouwen. In de applicatie kan men Bijbelteksten opzoeken, via een ingebouwde Bijbel.
-   Het project gebruikt de API: API.Bible (https//scripture.api.bible/). Deze API is gekozen omdat hij over de grootste verzameling aan Bijbels beschikt.
+FEATURES:
+Search for Bible verses by keyword
+Access a wide variety of Bibles through the use of APIs
+User authentication and authorization
 
-Backend informatie
-NOVI Educational Backend. De backend draait op een Heroku server. Deze backend is gebouwd door NOVI en mag alleen worden gebruikt voor opleidings-doeleinden. Deze server wordt automatisch inactief wanneer er een tijdje geen requests gemaakt worden. De eerste request die de server weer uit de 'slaapstand' haalt zal daarom maximaal 30 seconden op zich kunnen laten wachten. Daarna zal de responsetijd normaal zijn. Voer daarom altijd eerst een test-request uit.
+TECHNOLOGY STACK
+1. React.js
+2. React Router
+3. Axios
+4. API.Bible API
+5. A Biblia digital API
 
-Het project is opgezet met Create React App.
+HOW TO USE:
+1. Clone or download the repository
+2. Run npm install to install the necessary dependencies
+3. Run npm start to start the development server
+4. Visit http://localhost:3000 in your browser to use the app
+5. Create an account or log in to save your favorite verses
 
-2. Screenshot van de applicatie invoegen;
-   Eindresultaat
-   [screenshot invoegen]
+NOTE
+Please make sure to provide your own API key for API.Bible in a .env file at the root of the project
 
-3. Beschrijving hoe andere developers de applicatie kunnen runnen.
-   npm install --save browser-router
-   npm install react-icons --save
+CONTRIBUTION
+Feel free to contribute to the project by submitting pull requests and reporting issues.
