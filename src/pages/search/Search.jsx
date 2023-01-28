@@ -132,10 +132,10 @@ const Search = () => {
                                 className={styles.search__amount}>{totalResults}</span></p>
                         )}
                         {currentPost.length > 0 && (
-                            <ul>
+                            <ul className={styles.search__ul}>
                                 {currentPost.map((result) =>
                                     <li key={result.id} className={`${styles.search__list} search-result-item`}>
-                                        <span>{result.reference}</span>
+                                        <span className={styles.search__reference}>{result.reference}</span>
                                         <span>{result.text}</span>
                                     </li>
                                 )}

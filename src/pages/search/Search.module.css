@@ -73,6 +73,14 @@ hr{
     color: #623a1f;
     font-weight: bold;
 }
+.search__ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
 
 .search__list{
     display: flex;
@@ -85,4 +93,10 @@ hr{
     color: #062948;
     padding: 5px 5px;
     margin: 5px 5px;
+}
+
+.search__reference{
+    color: #1c72a3;
+    font-weight: bolder;
+    padding-right: 12px;
 }
