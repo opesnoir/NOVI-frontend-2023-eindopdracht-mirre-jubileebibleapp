@@ -1,5 +1,4 @@
 import React from 'react';
-import Wrapper from "../Wrapper/Wrapper";
 import styles from "./Pagination.module.css";
 
 const Pagination = ({totalPost, postPerPage, setCurrentPage, currentPage}) => {
@@ -16,7 +15,7 @@ const Pagination = ({totalPost, postPerPage, setCurrentPage, currentPage}) => {
 
     return (
         <>
-            <Wrapper>
+            <div className={styles.pagination__container}>
                 {pages.map((page, index)=> {
                     return <button
                         key={index}
@@ -24,7 +23,7 @@ const Pagination = ({totalPost, postPerPage, setCurrentPage, currentPage}) => {
                         className={page === currentPage ? styles.active : " "}
                     >{page}</button>
                 })}
-            </Wrapper>
+            </div>
         </>
     );
 };
