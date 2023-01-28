@@ -2,6 +2,18 @@ JUBILEE BIBLEAPP
 
 Jubilee BibleApp is a web application that allows users to search for and access Bible verses. The app utilizes the API.Bible and A Biblia digital APIs to provide a comprehensive collection of Bibles and background information on Bible books.
 
+IMAGES OF THE PAGE:
+homepage
+![alt text](/Users/mirre/WebstormProjects/mirrecicilia-jubileebibleapp-eindopdracht-frontend-eindversie-2023/src/assets/imghomepage.png)
+searchpage
+![alt text](/Users/mirre/WebstormProjects/mirrecicilia-jubileebibleapp-eindopdracht-frontend-eindversie-2023/src/assets/imgsearchpage.png)
+aboutpage
+![](/Users/mirre/WebstormProjects/mirrecicilia-jubileebibleapp-eindopdracht-frontend-eindversie-2023/src/assets/imgaboutpage.png)
+loginpage
+![](/Users/mirre/WebstormProjects/mirrecicilia-jubileebibleapp-eindopdracht-frontend-eindversie-2023/src/assets/imgloginpage.png)
+footer
+![](/Users/mirre/WebstormProjects/mirrecicilia-jubileebibleapp-eindopdracht-frontend-eindversie-2023/src/assets/imgfooter.png)
+
 FEATURES:
 Search for Bible verses by keyword
 Access a wide variety of Bibles through the use of APIs
