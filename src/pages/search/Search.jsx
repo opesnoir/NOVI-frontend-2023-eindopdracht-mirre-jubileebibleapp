@@ -98,11 +98,11 @@ const Search = () => {
 
     return (
         <>
-            <div>
-                <div>
+            <div className={styles.search__container__outer}>
+                <div className={styles.search__container__inner}>
                     <div>
-                        <form onSubmit={handleSearch}>
-                            <label htmlFor="bible">Selecteer een Bijbel:</label>
+                        <form onSubmit={handleSearch} className={styles.search__form__container}>
+                            <label htmlFor="bible" className={styles.search__label}>Selecteer een Bijbel:</label>
                             <select
                                 name="bible"
                                 id="bible"
@@ -123,12 +123,12 @@ const Search = () => {
                             <button type="submit">Zoeken</button>
                         </form>
                         {error &&
-                            <span>Er is een fout opgetreden: De Bijbeltaal en zoektermtaal dienen overeen te komen. {error.message}</span>}
+                            <span className={styles.search__error}>Er is een fout opgetreden: De Bijbeltaal en zoektermtaal dienen overeen te komen. {error.message}</span>}
                         <hr/>
-                        {loading && <span>Loading...</span>}
+                        {loading && <span className={styles.search__loading}>Loading...</span>}
                         {totalResults > 0 && (
-                            <p>Totaal aantal resultaten: <span
-                                >{totalResults}</span></p>
+                            <p className={styles.search__results}>Totaal aantal resultaten: <span
+                                className={styles.search__amount}>{totalResults}</span></p>
                         )}
                         {currentPost.length > 0 && (
                             <ul>
