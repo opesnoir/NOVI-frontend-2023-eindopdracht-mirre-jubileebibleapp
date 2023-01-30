@@ -1,4 +1,4 @@
-.about__p, .about__a{
+.about__p{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -9,8 +9,4 @@
     font-family: 'Inter', sans-serif;
     text-align: center;
     line-height: 50px;
-}
-
-.about__a{
-    color: #860E0E;
 }
