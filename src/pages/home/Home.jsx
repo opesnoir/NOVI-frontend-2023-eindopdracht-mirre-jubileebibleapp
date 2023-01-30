@@ -12,6 +12,7 @@ import schapen from "../../assets/home-sheeps-pexels-pixabay-460956.jpg";
 import HeroVideo from "../../components/HeroVideo/HeroVideo";
 import schaapVideo from "../../assets/home-video-sheep-production ID_5140592.mp4";
 import styles from "./Home.module.css";
+import Favorite from "../favorite/Favorite";
 
 
 

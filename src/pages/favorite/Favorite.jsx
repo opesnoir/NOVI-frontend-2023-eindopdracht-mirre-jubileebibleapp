@@ -145,7 +145,7 @@ const Favorite = () => {
                                         <li key={result.id} className={`${styles.search__list} search-result-item`}>
                                             <span className={styles.search__reference}>{result.reference}</span>
                                             <span>{result.text}</span>
-                                            <button onClick={()=> addFave(result)} type="button"><AiOutlineHeart/></button>
+                                            <button className={styles.search__favorite__button} onClick={()=> addFave(result)} type="button"><AiOutlineHeart/></button>
                                         </li>
                                     </>
                                 )}

@@ -34,7 +34,9 @@ const {isAuth} = useContext(AuthContext);
             <Route path="/profile" element={isAuth === true ? <Profile/> : <Navigate to="/signup"/>}></Route>
             {/*profile van styling voorzien:*/}
             {/*<Route path="/profile" element={<Profile/>}></Route>*/}
-            <Route path="/favorite-auth" element={isAuth === true ? <Favorite/> : <Navigate to="/search"/>}></Route>
+            {/*favorite van styling voorzien*/}
+            {/*<Route path="/favorite-auth" element={isAuth === true ? <Favorite/> : <Navigate to="/search"/>}></Route>*/}
+            <Route path="/favorite-auth" element={<Favorite/>}></Route>
             <Route path="*" element={<NotFound/>}></Route>
         </Routes>
         <Footer/>
