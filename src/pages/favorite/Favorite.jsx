@@ -5,6 +5,7 @@ import Image from "../../components/Image/Image";
 import lamb from "../../assets/search-lamb-pexels-paul-seling-891607.jpg";
 import Pagination from "../../components/Pagination/Pagination";
 import {AiOutlineHeart} from 'react-icons/ai';
+import {BsTrash} from "react-icons/bs";
 
 
 // api key
@@ -164,13 +165,16 @@ const Favorite = () => {
                     <hr/>
                     <div>
                         <h2>Favorites</h2>
-                        <ul>
+                        <ul className={styles.search__ul}>
                             {faves.length > 0 ?
                                 faves.map(fave => (
                                     <>
-                                        <li key={fave.id}>{fave.reference}</li>
-                                        <span key={fave.id}>{fave.text}</span>
-                                        <button onClick={() => removeFave(fave)}>Verwijder</button>
+                                        <li key={fave.id} className={`${styles.search__list} search-result-item`}>
+                                            <span className={styles.search__reference}>{fave.reference}</span>
+                                            <span>{fave.text}</span>
+                                            <button className={styles.search__delete__button}
+                                                    onClick={() => removeFave(fave)}><BsTrash/></button>
+                                        </li>
                                     </>
                                 )) :
                                 <p>Je hebt nog geen favorieten toegevoegd.</p>

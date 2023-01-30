@@ -117,3 +117,19 @@ hr{
     background-color: rgba(28, 114, 163, 0.59);
     box-shadow: 2px 5px 9px rgba(255, 253, 208, 0.7);
 }
+
+/*delete favorite button*/
+.search__delete__button{
+    background-color: lightgray;
+    box-shadow: 2px 5px 9px rgba(255, 253, 208, 0.7);
+}
+
+.search__delete__button:hover{
+    background-color: rgba(252, 65, 69, 0.7);
+    box-shadow: 2px 5px 9px rgba(255, 253, 208, 0.7);
+}
+
+.search__delete__button:focus{
+    background-color: #860E0E;
+    box-shadow: 2px 5px 9px rgba(255, 253, 208, 0.7);
+}
