@@ -158,6 +158,17 @@ const Favorite = () => {
                             setCurrentPage={setCurrentPage}
                         />
                     </div>
+                    <hr/>
+                    <div>
+                        <ul>
+                            {faves.length > 0 ?
+                                faves.map(fave => (
+                                    <li key={fave.id}>{fave.reference}</li>
+                                )) :
+                                <p>No favorites added yet</p>
+                            }
+                        </ul>
+                    </div>
                 </div>
             </div>
             <Image

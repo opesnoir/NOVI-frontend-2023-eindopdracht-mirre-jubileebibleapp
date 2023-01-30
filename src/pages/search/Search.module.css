@@ -102,10 +102,10 @@ hr{
     padding-right: 12px;
 }
 
+/*de button waarmee favoriten worden gezet op de favorite.jsx pagina*/
 .search__favorite__button{
     background-color: lightgray;
     box-shadow: 2px 5px 9px rgba(255, 253, 208, 0.7);
-
 }
 
 .search__favorite__button:hover{
