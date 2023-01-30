@@ -87,7 +87,10 @@ const Favorite = () => {
         setFaves(prev => [...prev, fave])
         /*console.log(fave);*/
     }
-
+    // function for removing favorite
+    const removeFave = (faveToRemove) => {
+        setFaves(faves.filter(fave => fave.id !== faveToRemove.id));
+    }
 
     // Pagination
     // state variables for the pagination
@@ -160,12 +163,17 @@ const Favorite = () => {
                     </div>
                     <hr/>
                     <div>
+                        <h2>Favorites</h2>
                         <ul>
                             {faves.length > 0 ?
                                 faves.map(fave => (
-                                    <li key={fave.id}>{fave.reference}</li>
+                                    <>
+                                        <li key={fave.id}>{fave.reference}</li>
+                                        <span key={fave.id}>{fave.text}</span>
+                                        <button onClick={() => removeFave(fave)}>Verwijder</button>
+                                    </>
                                 )) :
-                                <p>No favorites added yet</p>
+                                <p>Je hebt nog geen favorieten toegevoegd.</p>
                             }
                         </ul>
                     </div>
