@@ -1,22 +1,37 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import SectionInput from "../../components/SectionInput/SectionInput";
-import Wrapper from "../../components/Wrapper/Wrapper";
 import VideoCard from "../../components/VideoCard/VideoCard";
 import BibleVerseBlock from "../../components/BibleVerseBlock/BibleVerseBlock";
 import Tile from "../../components/Tile/Tile";
 import Button from "../../components/Button/Button";
 import {Link} from "react-router-dom";
-import Image from "../../components/Image/Image";
-import Bible from "../../assets/home-bible-pexels-johnmark-smith-272337.jpg";
-import schapen from "../../assets/home-sheeps-pexels-pixabay-460956.jpg";
 import HeroVideo from "../../components/HeroVideo/HeroVideo";
 import schaapVideo from "../../assets/home-video-sheep-production ID_5140592.mp4";
 import styles from "./Home.module.css";
-import Favorite from "../favorite/Favorite";
+
 
 
 
 const Home = () => {
+
+    const [email, setEmail] = useState("");
+
+    useEffect(() => {
+        const storedEmail = localStorage.getItem("email");
+        if (storedEmail) {
+            setEmail(storedEmail);
+        }
+    }, []);
+
+    const handleEmail = (event) => {
+        setEmail(event.target.value);
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        localStorage.setItem("email", email);
+    };
+
     return (
         <>
             <div className={styles.outer__container}>
@@ -83,9 +98,9 @@ const Home = () => {
                             title="Aanmelden"
                             paragraph="Op de hoogte blijven van ontwikkelingen? Meld je dan aan voor de nieuwsbrief."
                         >
-                            <form action="">
+                            <form onSubmit={handleSubmit}>
                                 <label htmlFor="" className={styles.tile__form__label}  placeholder="Email">Email:</label>
-                                <input className={styles.tile__label__input} type="email"/>
+                                <input value={email} onChange={handleEmail} className={styles.tile__label__input} type="email"/>
                                 <button type="button" className={styles.tile__aanmelden__button} >aanmelden</button>
                             </form>
                             <label>
