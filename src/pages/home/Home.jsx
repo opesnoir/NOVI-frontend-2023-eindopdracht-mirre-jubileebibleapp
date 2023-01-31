@@ -8,28 +8,12 @@ import {Link} from "react-router-dom";
 import HeroVideo from "../../components/HeroVideo/HeroVideo";
 import schaapVideo from "../../assets/home-video-sheep-production ID_5140592.mp4";
 import styles from "./Home.module.css";
+import Newsletter from "../../components/Newsletter/Newsletter";
 
 
 
 const Home = () => {
 
-    const [email, setEmail] = useState("");
-
-    useEffect(() => {
-        const storedEmail = localStorage.getItem("email");
-        if (storedEmail) {
-            setEmail(storedEmail);
-        }
-    }, []);
-
-    const handleEmail = (event) => {
-        setEmail(event.target.value);
-    };
-
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        localStorage.setItem("email", email);
-    };
 
     return (
         <>
@@ -97,11 +81,7 @@ const Home = () => {
                             title="Aanmelden"
                             paragraph="Op de hoogte blijven van ontwikkelingen? Meld je dan aan voor de nieuwsbrief."
                         >
-                            <form onSubmit={handleSubmit}>
-                                <label htmlFor="" className={styles.tile__form__label}  placeholder="Email">Email:</label>
-                                <input value={email} onChange={handleEmail} className={styles.tile__label__input} type="email"/>
-                                <button type="button" onClick={handleEmail} className={styles.tile__aanmelden__button} >aanmelden</button>
-                            </form>
+                            <Newsletter/>
                             <label>
                                 <input
                                     type="checkbox"
