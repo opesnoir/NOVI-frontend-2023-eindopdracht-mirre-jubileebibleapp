@@ -64,15 +64,15 @@ const Home = () => {
                         <VideoCard
                             width="359"
                             height="206"
-                            src="https://www.youtube.com/embed/7_CGP-12AE0"
-                            title="Story of the Bible"
+                            src="https://www.youtube.com/embed/r8lzuqbeC2c"
+                            title="What is the purpose of man?"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         />
                         <VideoCard
                             width="359"
                             height="206"
-                            src="https://www.youtube.com/embed/takEeHtRrMw"
-                            title="The New Humanity"
+                            src="https://www.youtube.com/embed/wdJdkN-mW2s"
+                            title="The Kingdom of God"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         />
                     </div>
