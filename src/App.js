@@ -32,11 +32,11 @@ const {isAuth} = useContext(AuthContext);
             <Route path="/signin" element={<Login/>}></Route>
             <Route path="/favorite" element={<Favorite/>}></Route>
             <Route path="/profile" element={isAuth === true ? <Profile/> : <Navigate to="/signup"/>}></Route>
+            <Route path="/favorite-auth" element={isAuth === true ? <Favorite/> : <Navigate to="/search"/>}></Route>
             {/*profile van styling voorzien:*/}
             {/*<Route path="/profile" element={<Profile/>}></Route>*/}
             {/*favorite van styling voorzien*/}
-            {/*<Route path="/favorite-auth" element={isAuth === true ? <Favorite/> : <Navigate to="/search"/>}></Route>*/}
-            <Route path="/favorite-auth" element={<Favorite/>}></Route>
+            {/*<Route path="/favorite-auth" element={<Favorite/>}></Route>*/}
             <Route path="*" element={<NotFound/>}></Route>
         </Routes>
         <Footer/>

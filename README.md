@@ -6,16 +6,17 @@ IMAGES OF THE PAGE:
 homepage
 ![alt text](/Users/mirre/WebstormProjects/mirrecicilia-jubileebibleapp-eindopdracht-frontend-eindversie-2023/src/assets/imghomepage.png)
 searchpage
-![alt text](/Users/mirre/WebstormProjects/mirrecicilia-jubileebibleapp-eindopdracht-frontend-eindversie-2023/src/assets/imgsearchpage.png)
+![searchpage image](/src/assets/imgsearchpage.png)
 aboutpage
-![](/Users/mirre/WebstormProjects/mirrecicilia-jubileebibleapp-eindopdracht-frontend-eindversie-2023/src/assets/imgaboutpage.png)
+![aboutpage image](/src/assets/imgaboutpage.png)
 loginpage
-![](/Users/mirre/WebstormProjects/mirrecicilia-jubileebibleapp-eindopdracht-frontend-eindversie-2023/src/assets/imgloginpage.png)
+![loginpage image](/src/assets/imgloginpage.png)
 footer
-![](/Users/mirre/WebstormProjects/mirrecicilia-jubileebibleapp-eindopdracht-frontend-eindversie-2023/src/assets/imgfooter.png)
+![footer image](/src/assets/imgfooter.png)
 
 FEATURES:
 Search for Bible verses by keyword
+Save Bible verses when signed in
 Access a wide variety of Bibles through the use of APIs
 User authentication and authorization
 
@@ -24,7 +25,6 @@ TECHNOLOGY STACK
 2. React Router
 3. Axios
 4. API.Bible API
-5. A Biblia digital API
 
 HOW TO USE:
 1. Clone or download the repository
@@ -35,6 +35,3 @@ HOW TO USE:
 
 NOTE
 Please make sure to provide your own API key for API.Bible in a .env file at the root of the project
-
-CONTRIBUTION
-Feel free to contribute to the project by submitting pull requests and reporting issues.
