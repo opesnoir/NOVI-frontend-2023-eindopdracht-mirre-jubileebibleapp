@@ -11,7 +11,6 @@ import styles from "./Home.module.css";
 
 
 
-
 const Home = () => {
 
     const [email, setEmail] = useState("");
@@ -101,7 +100,7 @@ const Home = () => {
                             <form onSubmit={handleSubmit}>
                                 <label htmlFor="" className={styles.tile__form__label}  placeholder="Email">Email:</label>
                                 <input value={email} onChange={handleEmail} className={styles.tile__label__input} type="email"/>
-                                <button type="button" className={styles.tile__aanmelden__button} >aanmelden</button>
+                                <button type="button" onClick={handleEmail} className={styles.tile__aanmelden__button} >aanmelden</button>
                             </form>
                             <label>
                                 <input
