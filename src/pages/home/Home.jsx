@@ -71,7 +71,7 @@ const Home = () => {
                         <VideoCard
                             width="359"
                             height="206"
-                            src="https://www.youtube.com/embed/wdJdkN-mW2s"
+                            src="https://www.youtube.com/embed/DdXzZLTSrUs"
                             title="The Kingdom of God"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         />
