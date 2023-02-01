@@ -118,3 +118,10 @@
     text-transform: uppercase;
     border: none;
 }
+
+/*5. Media Queries*/
+@media screen and (max-width: 1275px) {
+    .inner__container {
+        flex-basis: 100%;
+    }
+}
