@@ -75,3 +75,28 @@ nav a:focus{
     background-color: #860E0E;
     box-shadow: 2px 5px 9px rgba(255, 253, 208, 0.7);
 }
+
+
+/*dropdown menu over : over Bijbel en over Jubilee*/
+
+.nav__container nav ul li:hover ul {
+    display: block;
+    z-index: 1;
+}
+
+.nav__container nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+}
+
+.nav__container nav ul ul li {
+    float: none;
+    position: relative;
+}
+
+.nav__container nav ul ul ul {
+    top: 0;
+    left: 100%;
+}
+

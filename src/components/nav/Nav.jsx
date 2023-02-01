@@ -25,7 +25,13 @@ const Nav = () => {
                     <nav>
                         <ul>
                             <li><NavLink to="/">Home</NavLink></li>
-                            <li><NavLink to="/about">Over</NavLink></li>
+                            <li>
+                                <NavLink to="/about">Over</NavLink>
+                                <ul>
+                                  <li><NavLink to="/about-Jubilee">Over Jubilee</NavLink></li>
+                                  <li><NavLink to="/about-Bible">Over de Bijbel</NavLink></li>
+                                </ul>
+                            </li>
                             <img className={styles.nav__logo} src={logo} alt="Jubilee Logo"/>
                             { isAuth ?
                                 <>

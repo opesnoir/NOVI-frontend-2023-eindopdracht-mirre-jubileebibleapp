@@ -1,6 +1,4 @@
 JUBILEE BIBLEAPP
-
-API-key voor de examinator: 
 Jubilee BibleApp is a web application that allows users to search for and access Bible verses. The app utilizes the API.Bible and A Biblia digital APIs to provide a comprehensive collection of Bibles and background information on Bible books.
 
 IMAGES OF THE PAGE:
