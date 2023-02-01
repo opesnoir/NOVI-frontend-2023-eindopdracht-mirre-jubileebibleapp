@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import SectionInput from "../../components/SectionInput/SectionInput";
 import VideoCard from "../../components/VideoCard/VideoCard";
 import BibleVerseBlock from "../../components/BibleVerseBlock/BibleVerseBlock";
