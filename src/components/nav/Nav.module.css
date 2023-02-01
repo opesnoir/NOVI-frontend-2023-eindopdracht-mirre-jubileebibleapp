@@ -78,25 +78,29 @@ nav a:focus{
 
 
 /*dropdown menu over : over Bijbel en over Jubilee*/
-
 .nav__container nav ul li:hover ul {
     display: block;
     z-index: 1;
+    padding: 10px;
+    top: 35px;
 }
 
 .nav__container nav ul ul {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #e3e3e3;
 }
 
 .nav__container nav ul ul li {
     float: none;
     position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .nav__container nav ul ul ul {
     top: 0;
     left: 100%;
 }
-

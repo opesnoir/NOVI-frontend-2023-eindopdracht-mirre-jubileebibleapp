@@ -28,6 +28,7 @@ const Nav = () => {
                             <li>
                                 <NavLink to="/about">Over</NavLink>
                                 <ul>
+                                    <li><NavLink to="/about">Over mij</NavLink></li>
                                   <li><NavLink to="/about-Jubilee">Over Jubilee</NavLink></li>
                                   <li><NavLink to="/about-Bible">Over de Bijbel</NavLink></li>
                                 </ul>
