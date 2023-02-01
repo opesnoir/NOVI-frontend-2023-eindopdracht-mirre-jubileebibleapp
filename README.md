@@ -32,5 +32,3 @@ HOW TO USE:
 4. Visit http://localhost:3000 in your browser to use the app
 5. Create an account or log in to save your favorite verses
 
-NOTE
-Please make sure to provide your own API key for API.Bible in a .env file at the root of the project
