@@ -6,6 +6,7 @@ import {AuthContext} from "../../context/AuthContext";
 import styles from "./Nav.module.css";
 import {IoIosLogOut} from "react-icons/io";
 import {CgProfile} from "react-icons/cg";
+import {GiArchiveResearch} from "react-icons/gi";
 
 
 const Nav = () => {
@@ -33,6 +34,7 @@ const Nav = () => {
                                   <li><NavLink to="/about-Bible">Over de Bijbel</NavLink></li>
                                 </ul>
                             </li>
+                            <li><NavLink to="/search">{/*<GiArchiveResearch/>Lees*/}</NavLink> </li>
                             <img className={styles.nav__logo} src={logo} alt="Jubilee Logo"/>
                             { isAuth ?
                                 <>
@@ -43,6 +45,7 @@ const Nav = () => {
                                 <>
                                     <li><NavLink to="/signup"><AiOutlineUserAdd/>Registreer</NavLink></li>
                                     <li><NavLink to="/signin"><AiOutlineUser/>Login</NavLink></li>
+                                    <li><NavLink to="/search"><GiArchiveResearch/>Zoek</NavLink> </li>
                                 </>
                                 }
                         </ul>
