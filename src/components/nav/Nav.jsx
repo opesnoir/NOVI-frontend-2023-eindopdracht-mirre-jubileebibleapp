@@ -38,14 +38,15 @@ const Nav = () => {
                             <img className={styles.nav__logo} src={logo} alt="Jubilee Logo"/>
                             { isAuth ?
                                 <>
-                                    <li><NavLink to="/profile"><CgProfile/>Profielpagina</NavLink></li>
+                                    <li><NavLink to="/profile"><CgProfile/>Profiel</NavLink></li>
+                                    <li><NavLink to="/favorite"><GiArchiveResearch/>Favorieten</NavLink></li>
                                     <li><NavLink className={styles.nav__logout} type="text" onClick={handleLogout}><IoIosLogOut/>Uitloggen</NavLink></li>
                                 </>
                                 :
                                 <>
                                     <li><NavLink to="/signup"><AiOutlineUserAdd/>Registreer</NavLink></li>
                                     <li><NavLink to="/signin"><AiOutlineUser/>Login</NavLink></li>
-                                    <li><NavLink to="/search"><GiArchiveResearch/>Zoek</NavLink> </li>
+                                    <li><NavLink to="/search"><GiArchiveResearch/>Zoek</NavLink></li>
                                 </>
                                 }
                         </ul>

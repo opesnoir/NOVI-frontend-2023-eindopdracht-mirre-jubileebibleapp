@@ -164,7 +164,7 @@ const Favorite = () => {
                     </div>
                     <hr/>
                     <div>
-                        <h2>Favorites</h2>
+                        <h2>Favorieten</h2>
                         <ul className={styles.search__ul}>
                             {faves.length > 0 ?
                                 faves.map(fave => (
