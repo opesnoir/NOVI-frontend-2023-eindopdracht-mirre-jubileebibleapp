@@ -28,12 +28,17 @@ const Search = () => {
 
     //async function to fetch a list of Bibles
     useEffect(() => {
+
+        /*//cleanup
+        const source = axios.CancelToken.source();*/
+
         async function fetchData() {
             setError(false)
             try {
                 setLoading(true)
                 const response = await axios.get(`https://api.scripture.api.bible/v1/bibles`, {
-                    //HIER NOG TOKEN INVOEREN, ZIE EDHUB H. 10.1
+                   /* //cleanup
+                    cancelToken: source.token,*/
 
                     // header data and api key
                     headers: {
@@ -54,6 +59,10 @@ const Search = () => {
 
         //invoke function
         void fetchData()
+       /* //cleanup
+        return function cleanup(){
+            source.cancel();
+        }*/
     }, [])
 
     //function for form submit and search
