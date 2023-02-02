@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from "../../components/Image/Image";
 import AboutInput from "../../components/AboutInput/AboutInput";
-/*import styles from "./AboutBible.module.css";*/
 import styles from "../../components/AboutInput/AboutInput.module.css";
 import schapen from "../../assets/about-sheeps-pexels-nazım-can-pirinç-11443337.jpg"
 

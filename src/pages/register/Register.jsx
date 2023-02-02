@@ -3,7 +3,6 @@ import axios from "axios";
 import Button from "../../components/Button/Button";
 import lam from "../../assets/login-lamb-pexels-atahan-demir-11553491.jpg";
 import Image from "../../components/Image/Image";
-import Wrapper from "../../components/Wrapper/Wrapper";
 import FormInput from "../../components/FormInput/FormInput";
 import {useForm} from "react-hook-form";
 import styles from "../login/Login.module.css";
@@ -18,12 +17,6 @@ const Register = () => {
 
     // token
     const token = localStorage.getItem('token');
-
-
-    //function for handeling the submit
-    // function handleFormSubmit(data) {
-    //     console.log(data)
-    // }
 
     // function to register user
     async function registerUser(data) {

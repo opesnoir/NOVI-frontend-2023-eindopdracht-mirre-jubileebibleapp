@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./AboutInput.module.css";
-import Image from "../Image/Image";
+
 
 const AboutInput = ({title, paragraphOne, paragraphTwo, children, signature}) => {
     return (

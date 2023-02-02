@@ -22,7 +22,6 @@ const NotFound = () => {
                 image={ram}
                 alt="Afbeelding van een ram"
             />
-
         </>
     );
 };
