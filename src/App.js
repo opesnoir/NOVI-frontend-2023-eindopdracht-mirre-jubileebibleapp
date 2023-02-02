@@ -14,7 +14,7 @@ import NotFound from "./pages/notFound/NotFound";
 import Search from "./pages/search/Search";
 import {AuthContext} from "./context/AuthContext";
 import {useContext} from "react";
-import styles from "./App.css";
+
 
 function App() {
 const {isAuth} = useContext(AuthContext);
@@ -33,10 +33,6 @@ const {isAuth} = useContext(AuthContext);
             <Route path="/favorite" element={<Favorite/>}></Route>
             <Route path="/profile" element={isAuth === true ? <Profile/> : <Navigate to="/signup"/>}></Route>
             <Route path="/favorite-auth" element={isAuth === true ? <Favorite/> : <Navigate to="/search"/>}></Route>
-            {/*profile van styling voorzien:*/}
-            {/*<Route path="/profile" element={<Profile/>}></Route>*/}
-            {/*favorite van styling voorzien*/}
-            {/*<Route path="/favorite-auth" element={<Favorite/>}></Route>*/}
             <Route path="*" element={<NotFound/>}></Route>
         </Routes>
         <Footer/>

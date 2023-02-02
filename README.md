@@ -3,7 +3,7 @@ Jubilee BibleApp is a web application that allows users to search for and access
 
 IMAGES OF THE PAGE:
 homepage
-![alt text](/Users/mirre/WebstormProjects/mirrecicilia-jubileebibleapp-eindopdracht-frontend-eindversie-2023/src/assets/imghomepage.png)
+![alt text](/src/assets/imghomepage.png)
 searchpage
 ![searchpage image](/src/assets/imgsearchpage.png)
 aboutpage
