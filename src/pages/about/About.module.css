@@ -1,0 +1,16 @@
+/*styling signature*/
+.section__signature{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px 30px 30px 30px;
+    margin: 50px 15px;
+    color: rgb(224, 203, 186);
+    font-size: 80px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+    line-height: 50px;
+}
+
