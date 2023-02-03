@@ -1,4 +1,4 @@
-/*styling aboutBible, used for children: 'tekstpart', see css AboutInput.module.css*/
+/*styling aboutBible, used for children: 'text-part', see css AboutInput.module.css*/
 .about__p{
     display: flex;
     flex-direction: row;

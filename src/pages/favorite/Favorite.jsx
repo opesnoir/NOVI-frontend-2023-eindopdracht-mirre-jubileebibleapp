@@ -135,7 +135,7 @@ const Favorite = () => {
                             <button type="submit">Zoeken</button>
                         </form>
                         {error &&
-                            <span className={styles.search__error}>Er is een fout opgetreden: De Bijbeltaal en zoektermtaal dienen overeen te komen. {error.message}</span>}
+                            <span className={styles.search__error}>Er is een fout opgetreden: De Bijbeltaal en zoekterm-taal dienen overeen te komen. {error.message}</span>}
                         <hr/>
                         {loading && <span className={styles.search__loading}>Loading...</span>}
                         {totalResults > 0 && (
