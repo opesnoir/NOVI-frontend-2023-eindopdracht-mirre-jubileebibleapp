@@ -9,6 +9,7 @@ import HeroVideo from "../../components/HeroVideo/HeroVideo";
 import schaapVideo from "../../assets/home-video-sheep-production ID_5140592.mp4";
 import styles from "./Home.module.css";
 import Newsletter from "../../components/Newsletter/Newsletter";
+import BibleBook from "../../components/BibleBook/BibleBook";
 
 
 

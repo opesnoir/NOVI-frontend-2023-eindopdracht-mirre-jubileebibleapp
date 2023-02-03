@@ -6,10 +6,12 @@ import Image from "../../components/Image/Image";
 import FormInput from "../../components/FormInput/FormInput";
 import {useForm} from "react-hook-form";
 import styles from "../login/Login.module.css";
+import {useNavigate} from "react-router-dom";
 
 const Register = () => {
 
     const {register, handleSubmit, formState: {errors}} = useForm();
+    const navigate = useNavigate();
 
     // form
     const [showPassword, setShowPassword] = useState( false );
@@ -29,6 +31,7 @@ const Register = () => {
                 "password": data.password,
                 "roles": ["user"],
             })
+            navigate('/signin');
             console.log(response);
             /*login( response.data.accessToken )*/
         } catch ( e ) {
